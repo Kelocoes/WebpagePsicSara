@@ -1,4 +1,3 @@
-import './App.css';
 import SplashScreen from './components/SplashScreen';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { useState, useEffect } from 'react';
@@ -33,11 +32,9 @@ function App() {
   return (
     <ThemeProvider theme={customTheme}>
       {showHomePage ?
-        <SplashScreen />
+        <SplashScreen/>
       :
-      <div className="App-background">
         <Landing />
-      </div>
       }
     </ThemeProvider>
   );

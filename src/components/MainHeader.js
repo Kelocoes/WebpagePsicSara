@@ -62,9 +62,15 @@ export default function MainHeader() {
                         width: '98%'
                     }}
                 >
-                    <Box>
+                    <Box
+                        sx={{
+                            marginLeft: {sm: 2},
+                            position: { md: "absolute" },
+                            left: "20px"
+                        }}
+                    >
                         <img
-                            style={{ width: '50px', marginLeft: 25, marginTop: 3, marginRight: 1 }}
+                            style={{ width: '50px', marginTop: 3 }}
                             src={saraLogoUrl}
                             alt="Logo"
                         />

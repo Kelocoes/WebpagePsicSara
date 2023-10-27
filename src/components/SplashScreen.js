@@ -15,7 +15,7 @@ export default function SplashScreen() {
     })
 
     return (
-        <Fade in={show}>
+        <Fade in={show} mountOnEnter unmountOnExit>
             <div
                 style={{
                     backgroundColor: 'white',

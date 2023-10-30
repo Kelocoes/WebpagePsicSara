@@ -73,7 +73,7 @@ export default function Services() {
                     <Grid item sm={12} md={3}>
                         <Grow in={order.length >= 3} timeout={1000}>
                             <Box align="center">
-                                <Typography sx={{ fontSize: 35 }}>Escuela para padres</Typography>
+                                <Typography sx={{ fontSize: 35 }}>Escuela <br/> para padres</Typography>
                                 <Diversity1Icon sx={{ fontSize: 75 }} />
                                 <Typography sx={{ fontSize: 15, textAlign: "justify", paddingX: 5, paddingTop: 1 }}> Lorem ipsum dolor sit amet, consectetur adipiscing elit
                                     , sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -86,7 +86,7 @@ export default function Services() {
                     <Grid item sm={12} md={3}>
                         <Grow in={order.length >= 4} timeout={1000}>
                             <Box align="center">
-                                <Typography sx={{ fontSize: 35 }}>Capacitación empresarial</Typography>
+                                <Typography sx={{ fontSize: 35 }}>Capacitación <br/> empresarial</Typography>
                                 <ApartmentIcon sx={{ fontSize: 75 }} />
                                 <Typography sx={{ fontSize: 15, textAlign: "justify", paddingX: 5, paddingTop: 1 }}> Lorem ipsum dolor sit amet, consectetur adipiscing elit
                                     , sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.

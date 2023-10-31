@@ -37,7 +37,9 @@ export default function Services() {
                     width: '90%',
                     backgroundColor: '#aa86d1b3',
                     padding: 1,
-                    color: 'white'
+                    color: 'white',
+                    marginTop: 5,
+                    borderRadius: 5
                 }}
                 elevation={10}
             >
@@ -49,7 +51,7 @@ export default function Services() {
                             <Box align="center">
                                 <Typography sx={{ fontSize: 35 }}>Psicoterapia <br/> individual</Typography>
                                 <PsychologyAltIcon sx={{ fontSize: 75 }} />
-                                <Typography sx={{ fontSize: 15, textAlign: "justify", paddingX: 5, paddingTop: 1 }}> Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                <Typography sx={{ fontSize: 15, textAlign: "justify", paddingX: 2, paddingTop: 1 }}> Lorem ipsum dolor sit amet, consectetur adipiscing elit
                                     , sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
                                     ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.
@@ -62,7 +64,7 @@ export default function Services() {
                             <Box align="center">
                                 <Typography sx={{ fontSize: 35 }}>Orientación <br/> vocacional</Typography>
                                 <AutoStoriesIcon sx={{ fontSize: 75 }} />
-                                <Typography sx={{ fontSize: 15, textAlign: "justify", paddingX: 5, paddingTop: 1 }}> Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                <Typography sx={{ fontSize: 15, textAlign: "justify", paddingX: 2, paddingTop: 1 }}> Lorem ipsum dolor sit amet, consectetur adipiscing elit
                                     , sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
                                     ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.
@@ -75,7 +77,7 @@ export default function Services() {
                             <Box align="center">
                                 <Typography sx={{ fontSize: 35 }}>Escuela <br/> para padres</Typography>
                                 <Diversity1Icon sx={{ fontSize: 75 }} />
-                                <Typography sx={{ fontSize: 15, textAlign: "justify", paddingX: 5, paddingTop: 1 }}> Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                <Typography sx={{ fontSize: 15, textAlign: "justify", paddingX: 2, paddingTop: 1 }}> Lorem ipsum dolor sit amet, consectetur adipiscing elit
                                     , sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
                                     ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.
@@ -88,7 +90,7 @@ export default function Services() {
                             <Box align="center">
                                 <Typography sx={{ fontSize: 35 }}>Capacitación <br/> empresarial</Typography>
                                 <ApartmentIcon sx={{ fontSize: 75 }} />
-                                <Typography sx={{ fontSize: 15, textAlign: "justify", paddingX: 5, paddingTop: 1 }}> Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                <Typography sx={{ fontSize: 15, textAlign: "justify", paddingX: 2, paddingTop: 1 }}> Lorem ipsum dolor sit amet, consectetur adipiscing elit
                                     , sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
                                     ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.

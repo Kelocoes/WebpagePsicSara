@@ -3,6 +3,7 @@ import MainHeader from "./MainHeader";
 import Services from "./Services"
 import Footer from "./Footer";
 import Box from '@mui/material/Box';
+import AboutMe from "./AboutMe";
 
 export default function Landing() {
     return (
@@ -19,7 +20,7 @@ export default function Landing() {
         >
             <MainHeader />
             <h1>1</h1>
-            <h1>2</h1>
+            <AboutMe />
             <Services />
             <h1>4</h1>
             <h1>5</h1>

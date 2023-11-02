@@ -10,6 +10,7 @@ import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import MenuItem from '@mui/material/MenuItem';
 import useMediaQuery from '@mui/material/useMediaQuery';
+import CardMedia from '@mui/material/CardMedia';
 
 export default function MainHeader() {
     const [value, setValue] = useState(0);
@@ -59,27 +60,29 @@ export default function MainHeader() {
                     }}
                     sx={{
                         ...config,
-                        width: '98%'
+                        width: '91%',
+                        height: '10%',
                     }}
                 >
                     <Box
                         sx={{
-                            marginLeft: {sm: 2},
+                            marginLeft: 2,
                             position: { md: "absolute" },
-                            left: "20px"
+                            left: "20px",
                         }}
                     >
-                        <img
-                            style={{ width: '50px', marginTop: 3 }}
-                            src={saraLogoUrl}
-                            alt="Logo"
+                        <CardMedia
+                            sx={{ width: '75px', marginTop: { xl: '8px', lg:'4px', xs:'4px' }}}
+                            component="img"
+                            image={saraLogoUrl}
+                            alt="About me"
                         />
                     </Box>
-                    <BottomNavigationAction label="Inicio" />
-                    <BottomNavigationAction label="Sobre mí" />
-                    <BottomNavigationAction label="Servicios" />
-                    <BottomNavigationAction label="Agenda cita" />
-                    <BottomNavigationAction label="Contacto" />
+                    <BottomNavigationAction label={<h3>Inicio</h3>} sx={{ marginLeft: { lg: 0, md: 20}}}/>
+                    <BottomNavigationAction label={<h3>Sobre mí</h3>} />
+                    <BottomNavigationAction label={<h3>Servicios</h3>} />
+                    <BottomNavigationAction label={<h3>Agenda cita</h3>} />
+                    <BottomNavigationAction label={<h3>Contacto</h3>} />
                 </BottomNavigation>
             }
         </Fade>

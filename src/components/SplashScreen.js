@@ -1,7 +1,6 @@
 import React from 'react';
 import saraLogoUrl from '../assets/images/sara-logo.png';
 import CardMedia from '@mui/material/CardMedia';
-import Card from '@mui/material/Card';
 import { useState, useEffect } from 'react';
 import Fade from '@mui/material/Fade';
 
@@ -27,14 +26,12 @@ export default function SplashScreen() {
                     justifyContent: 'center',
                 }}
             >
-                <Card >
-                    <CardMedia
-                        style={{ width: '200px' }}
-                        component="img"
-                        image={saraLogoUrl}
-                        alt="Logo"
-                    />
-                </Card>
+                <CardMedia
+                    style={{ width: '200px' }}
+                    component="img"
+                    image={saraLogoUrl}
+                    alt="Logo"
+                />
             </div>
         </Fade>
     )

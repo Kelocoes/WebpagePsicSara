@@ -4,6 +4,8 @@ import Services from "./Services"
 import Footer from "./Footer";
 import Box from '@mui/material/Box';
 import AboutMe from "./AboutMe";
+import Contact from "./Contact";
+import TimeLine from "./TimeLine";
 
 export default function Landing() {
     return (
@@ -21,10 +23,11 @@ export default function Landing() {
             <MainHeader />
             <h1>1</h1>
             <AboutMe />
+            <TimeLine />
             <Services />
             <h1>4</h1>
             <h1>5</h1>
-            <h1>6</h1>
+            <Contact />
             <Footer />
         </Box>
     )

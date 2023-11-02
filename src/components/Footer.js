@@ -16,7 +16,7 @@ export default function Footer() {
         <Fade in={true} timeout={500}>
             <Box
                 sx={{
-                    width: "98%",
+                    width: "91%",
                     height: "auto",
                     backgroundColor: "secondary.main",
                     borderRadius: '20px',

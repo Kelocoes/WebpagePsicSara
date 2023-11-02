@@ -20,6 +20,7 @@ export default function MainHeader() {
         marginTop: 2,
         boxShadow: 10,
         position: 'fixed',
+        zIndex: 2
     }
 
     return (

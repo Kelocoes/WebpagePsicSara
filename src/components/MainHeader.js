@@ -61,7 +61,7 @@ export default function MainHeader() {
                     sx={{
                         ...config,
                         width: '91%',
-                        height: '10%',
+                        height: '85px',
                     }}
                 >
                     <Box

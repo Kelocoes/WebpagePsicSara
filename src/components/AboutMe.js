@@ -62,7 +62,7 @@ export default function AboutMe() {
                     <Grid item md={12} lg={8} sx={{ paddingX: 4, paddingTop: 2 }}>
                         <Grow in={order.length >= 3} timeout={1000}>
                             <Box>
-                                <Typography color="grey" sx={{ textAlign: { sm:"justify", xs: "left"}, fontSize: 25 }}>
+                                <Typography color="grey" sx={{ textAlign: { sm:"justify", xs: "left"}, fontSize: { xs: 18, sm: 25 }}}>
                                 ¡Hola! Soy Sara Elizabeth Plaza, psicóloga egresada de la Universidad Pontificia Bolivariana. 
                                 Utilizo un enfoque humanista centrado en la persona en los procesos de psicoterapia, ya que se basa en la empatía, 
                                 comprensión y respeto hacia cada individuo.

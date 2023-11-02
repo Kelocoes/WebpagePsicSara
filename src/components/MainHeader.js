@@ -44,11 +44,11 @@ export default function MainHeader() {
                             />
                         </AccordionSummary>
                         <div>
+                            <MenuItem style={{ color: "grey" }}>Inicio</MenuItem>
                             <MenuItem style={{ color: "grey" }}>Sobre mí</MenuItem>
                             <MenuItem style={{ color: "grey" }}>Servicios</MenuItem>
                             <MenuItem style={{ color: "grey" }}>Agenda cita</MenuItem>
                             <MenuItem style={{ color: "grey" }}>Contacto</MenuItem>
-                            <MenuItem style={{ color: "grey" }}>Inicio</MenuItem>
                         </div>
                     </Accordion>
                 </Box>

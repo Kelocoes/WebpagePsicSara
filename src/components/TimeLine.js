@@ -18,7 +18,7 @@ export default function TimeLine() {
     const [visible2, setVisible2] = useState(false);
 
     return (
-        <Box sx={{ paddingTop: 10 }}>
+        <Box >
             <VerticalTimeline>
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"

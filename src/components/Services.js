@@ -41,7 +41,6 @@ export default function Services() {
                         backgroundColor: '#aa86d1b3',
                         padding: 1,
                         color: 'white',
-                        marginTop: 5,
                         borderRadius: 5
                     }}
                     elevation={10}

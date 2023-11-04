@@ -11,9 +11,11 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import MenuItem from '@mui/material/MenuItem';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import CardMedia from '@mui/material/CardMedia';
+import { scroller } from 'react-scroll';
 
 export default function MainHeader() {
     const [value, setValue] = useState(0);
+    const [expandedAccordion, setExpandedAccordion] = useState(false)
     const matches = useMediaQuery('(max-width:600px)');
     const config = {
         borderRadius: '20px',
@@ -21,6 +23,24 @@ export default function MainHeader() {
         boxShadow: 10,
         position: 'fixed',
         zIndex: 2
+    }
+
+    const options = {
+        smooth: true,
+        offset: matches ? -100 :-110
+    }
+
+    const sections = {
+        1: 'Start',
+        2: 'AboutMe',
+        3: 'Services',
+        4: 'Appointment',
+        5: 'Contact',
+    }
+
+    const scrollAndRoll = (id) => {
+        scroller.scrollTo(sections[id], options)
+        setExpandedAccordion(true)
     }
 
     return (
@@ -31,7 +51,7 @@ export default function MainHeader() {
                         ...config
                     }}
                 >
-                    <Accordion square='false' sx={{ width: '100%', borderRadius: '20px' }}>
+                    <Accordion square='false' sx={{ width: '100%', borderRadius: '20px' }} expanded={expandedAccordion} onClick={() => setExpandedAccordion(prevState => !prevState)}>
                         <AccordionSummary
                             expandIcon={<ExpandMoreIcon />}
                             aria-controls="panel1a-content"
@@ -44,11 +64,11 @@ export default function MainHeader() {
                             />
                         </AccordionSummary>
                         <div>
-                            <MenuItem style={{ color: "grey" }}>Inicio</MenuItem>
-                            <MenuItem style={{ color: "grey" }}>Sobre mí</MenuItem>
-                            <MenuItem style={{ color: "grey" }}>Servicios</MenuItem>
-                            <MenuItem style={{ color: "grey" }}>Agenda cita</MenuItem>
-                            <MenuItem style={{ color: "grey" }}>Contacto</MenuItem>
+                            <MenuItem style={{ color: "grey" }} onClick={() => scrollAndRoll(1)}>Inicio</MenuItem>
+                            <MenuItem style={{ color: "grey" }} onClick={() => scrollAndRoll(2)}>Sobre mí</MenuItem>
+                            <MenuItem style={{ color: "grey" }} onClick={() => scrollAndRoll(3)}>Servicios</MenuItem>
+                            <MenuItem style={{ color: "grey" }} onClick={() => scrollAndRoll(4)}>Agenda cita</MenuItem>
+                            <MenuItem style={{ color: "grey" }} onClick={() => scrollAndRoll(5)}>Contacto</MenuItem>
                         </div>
                     </Accordion>
                 </Box>
@@ -57,7 +77,8 @@ export default function MainHeader() {
                     showLabels
                     value={value}
                     onChange={(event, newValue) => {
-                        setValue(newValue);
+                        setValue(newValue)
+                        scroller.scrollTo(sections[newValue], options)
                     }}
                     sx={{
                         ...config,

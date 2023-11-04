@@ -15,7 +15,7 @@ import { useInView } from 'react-intersection-observer';
 export default function Services() {
     const [order, setOrder] = useState([]);
     const [currentIndex, setCurrentIndex] = useState(0);
-    const [ref, inView] = useInView({ triggerOnce: true, delay: 250, threshold: 1 });
+    const [ref, inView] = useInView({ triggerOnce: true, delay: 150, threshold: 1 });
 
     useEffect(() => {
         const interval = setInterval(() => {

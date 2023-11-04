@@ -15,7 +15,7 @@ import { useRef } from 'react';
 
 export default function Contact() {
     const { handleSubmit: getInfo, register: registro, reset } = useForm();
-    const [ref, inView] = useInView({ triggerOnce: true, delay: 250 });
+    const [ref, inView] = useInView({ triggerOnce: true, delay: 150 });
     const { serviceId, templateId, mailPublicKey } = useEnv()
     const [isActive, setIsActive] = useState(true);
     const form = useRef();

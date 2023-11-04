@@ -8,27 +8,33 @@ import Contact from "./Contact";
 import TimeLine from "./TimeLine";
 
 export default function Landing() {
+    const config = {
+        backgroundColor: "#bdb3e9",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        color: "white",
+        fontSize: "calc(10px + 2vmin)",
+        textAlign: "center"
+    }
+
     return (
-        <Box 
-            sx={{
-                backgroundColor: "#bdb3e9",
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-                color: "white",
-                fontSize: "calc(10px + 2vmin)",
-                textAlign: "center"
-            }}
-        >
-            <MainHeader />
-            <h1>1</h1>
-            <AboutMe />
-            <TimeLine />
-            <Services />
-            <h1>4</h1>
-            <h1>5</h1>
-            <Contact />
-            <Footer />
-        </Box>
+        <>
+            <Box sx={config}>
+                <MainHeader />
+                <h1>1</h1>
+                <AboutMe />
+            </Box>
+            <Box sx={{ backgroundColor: "#bdb3e9" }}>
+                <TimeLine />
+            </Box>
+            <Box sx={config}>
+                <Services />
+                <h1>4</h1>
+                <h1>5</h1>
+                <Contact />
+                <Footer />
+            </Box>
+        </>
     )
 }

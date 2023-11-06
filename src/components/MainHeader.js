@@ -83,7 +83,7 @@ export default function MainHeader() {
                     sx={{
                         ...config,
                         width: '91%',
-                        height: '85px',
+                        height: '60px',
                     }}
                 >
                     <Box
@@ -94,7 +94,7 @@ export default function MainHeader() {
                         }}
                     >
                         <CardMedia
-                            sx={{ width: '75px', marginTop: { xl: '8px', lg:'4px', xs:'4px' }}}
+                            sx={{ width: '50px', marginTop: { xl: '8px', lg:'4px', xs:'4px' }}}
                             component="img"
                             image={saraLogoUrl}
                             alt="About me"

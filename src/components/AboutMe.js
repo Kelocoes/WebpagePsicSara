@@ -14,7 +14,7 @@ import { useInView } from 'react-intersection-observer';
 export default function AboutMe() {
     const [order, setOrder] = useState([]);
     const [currentIndex, setCurrentIndex] = useState(0);
-    const [ref, inView] = useInView({ triggerOnce: true, delay: 150 });
+    const [ref] = useInView({ triggerOnce: true, delay: 150 });
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -33,7 +33,7 @@ export default function AboutMe() {
 
     return (
         <Box ref={ref} align="center">
-            <Zoom direction="up" in={inView} mountOnEnter unmountOnExit timeout={1000}>
+            <Zoom in={true} mountOnEnter unmountOnExit timeout={1000}>
                 <Paper
                     sx={{
                         width: '90%',
@@ -53,19 +53,19 @@ export default function AboutMe() {
                                 </Box>
                             </Grow>
                         </Grid>
-                        <Grid item xs={12} sx={{ marginBottom: 2 }}>
+                        <Grid item xs={12} >
                             <Grow in={order.length >= 2} timeout={1000}>
                                 <Box>
-                                    <Typography variant="body1" align="center" color="#7b38c2b3" sx={{ fontStyle: "italic", fontWeight: "bold", fontSize: 25, paddingX: { lg: 30, sm: 0 } }} >
+                                    <Typography variant="body1" align="center" color="#7b38c2b3" sx={{ fontStyle: "italic", fontWeight: "bold", fontSize: 18, paddingX: { lg: 30, sm: 0 } }} >
                                         "Cuando ya no somos capaces de cambiar una situación, nos encontramos ante el desafío de cambiarnos a nosotros mismos" <br />- Viktor Frankl
                                     </Typography>
                                 </Box>
                             </Grow>
                         </Grid>
-                        <Grid item md={12} lg={8} sx={{ paddingX: 4, paddingTop: 2 }}>
+                        <Grid item md={12} lg={9} sx={{ paddingX: 4, paddingTop: 2 }}>
                             <Grow in={order.length >= 3} timeout={1000}>
                                 <Box>
-                                    <Typography color="grey" sx={{ textAlign: { sm: "justify", xs: "left" }, fontSize: { xs: 18, sm: 25 } }}>
+                                    <Typography color="grey" sx={{ textAlign: { sm: "justify", xs: "left" }, fontSize: 18 }}>
                                         ¡Hola! Soy Sara Elizabeth Plaza, psicóloga egresada de la Universidad Pontificia Bolivariana.
                                         Utilizo un enfoque humanista centrado en la persona en los procesos de psicoterapia, ya que se basa en la empatía,
                                         comprensión y respeto hacia cada individuo.
@@ -83,10 +83,10 @@ export default function AboutMe() {
                                 </Box>
                             </Grow>
                         </Grid>
-                        <Grid item xs={12} md={12} lg={4} sx={{ justifyContent: "center", display: "flex", padding: 3 }}>
+                        <Grid item xs={12} md={12} lg={3} sx={{ justifyContent: "center", display: "flex", padding: 3 }}>
                             <Grow in={order.length >= 4} timeout={1000}>
                                 <CardMedia
-                                    sx={{ maxWidth: '100%', height: 'auto' }}
+                                    sx={{ maxWidth: { lg: '78%', md: '30%', sm:'45%'}, height: 'auto' }}
                                     component="img"
                                     image={AboutMePhoto}
                                     alt="About me"

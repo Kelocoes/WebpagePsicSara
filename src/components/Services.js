@@ -51,9 +51,9 @@ export default function Services() {
                         <Grid item sm={12} lg={3}>
                             <Grow in={order.length >= 1} timeout={1000}>
                                 <Box align="center">
-                                    <Typography sx={{ fontSize: 35 }}>Psicoterapia <br/> individual</Typography>
+                                    <Typography sx={{ fontSize: 30 }}>Psicoterapia <br/> individual</Typography>
                                     <PsychologyAltIcon sx={{ fontSize: 75 }} />
-                                    <Typography sx={{ fontSize: 20, textAlign: "justify", paddingX: 2, paddingTop: 1 }}> Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                    <Typography sx={{ fontSize: 18, textAlign: "justify", paddingX: 2, paddingTop: 1 }}> Lorem ipsum dolor sit amet, consectetur adipiscing elit
                                         , sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
                                         ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.
@@ -64,9 +64,9 @@ export default function Services() {
                         <Grid item sm={12} lg={3}>
                             <Grow in={order.length >= 2} timeout={1000}>
                                 <Box align="center">
-                                    <Typography sx={{ fontSize: 35 }}>Orientación <br/> vocacional</Typography>
+                                    <Typography sx={{ fontSize: 30 }}>Orientación <br/> vocacional</Typography>
                                     <AutoStoriesIcon sx={{ fontSize: 75 }} />
-                                    <Typography sx={{ fontSize: 20, textAlign: "justify", paddingX: 2, paddingTop: 1 }}> Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                    <Typography sx={{ fontSize: 18, textAlign: "justify", paddingX: 2, paddingTop: 1 }}> Lorem ipsum dolor sit amet, consectetur adipiscing elit
                                         , sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
                                         ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.
@@ -77,9 +77,9 @@ export default function Services() {
                         <Grid item sm={12} lg={3}>
                             <Grow in={order.length >= 3} timeout={1000}>
                                 <Box align="center">
-                                    <Typography sx={{ fontSize: 35 }}>Escuela <br/> para padres</Typography>
+                                    <Typography sx={{ fontSize: 30 }}>Escuela <br/> para padres</Typography>
                                     <Diversity1Icon sx={{ fontSize: 75 }} />
-                                    <Typography sx={{ fontSize: 20, textAlign: "justify", paddingX: 2, paddingTop: 1 }}> Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                    <Typography sx={{ fontSize: 18, textAlign: "justify", paddingX: 2, paddingTop: 1 }}> Lorem ipsum dolor sit amet, consectetur adipiscing elit
                                         , sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
                                         ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.
@@ -90,9 +90,9 @@ export default function Services() {
                         <Grid item sm={12} lg={3}>
                             <Grow in={order.length >= 4} timeout={1000}>
                                 <Box align="center">
-                                    <Typography sx={{ fontSize: 35 }}>Capacitación <br/> empresarial</Typography>
+                                    <Typography sx={{ fontSize: 30 }}>Capacitación <br/> empresarial</Typography>
                                     <ApartmentIcon sx={{ fontSize: 75 }} />
-                                    <Typography sx={{ fontSize: 20, textAlign: "justify", paddingX: 2, paddingTop: 1 }}> Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                    <Typography sx={{ fontSize: 18, textAlign: "justify", paddingX: 2, paddingTop: 1 }}> Lorem ipsum dolor sit amet, consectetur adipiscing elit
                                         , sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
                                         ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.

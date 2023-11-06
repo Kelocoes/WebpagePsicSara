@@ -15,7 +15,7 @@ import { useRef } from 'react';
 
 export default function Contact() {
     const { handleSubmit: getInfo, register: registro, reset } = useForm();
-    const [ref, inView] = useInView({ triggerOnce: true, delay: 150 });
+    const [ref, inView] = useInView({ triggerOnce: true, delay: 100, threshold: 1 });
     const { serviceId, templateId, mailPublicKey } = useEnv()
     const [isActive, setIsActive] = useState(true);
     const form = useRef();
@@ -36,7 +36,7 @@ export default function Contact() {
             <Grow in={inView} mountOnEnter unmountOnExit timeout={1000}>
                 <Paper
                     sx={{
-                        width: { xs: '70%', md: '60%' },
+                        width: { xs: '70%', md: '50%' },
                         backgroundColor: '#white',
                         padding: 1,
                         color: 'white',
@@ -58,6 +58,7 @@ export default function Contact() {
                                     <Grid container spacing={2}>
                                         <Grid item xs={12}>
                                             <TextField
+                                                size="small"
                                                 fullWidth
                                                 label="Nombre"
                                                 {...registro('name', { required: true })}
@@ -65,6 +66,7 @@ export default function Contact() {
                                         </Grid>
                                         <Grid item xs={12}>
                                             <TextField
+                                                size="small"
                                                 fullWidth
                                                 label="Email"
                                                 {...registro('email', { required: true })}
@@ -72,6 +74,7 @@ export default function Contact() {
                                         </Grid>
                                         <Grid item xs={12}>
                                             <TextField
+                                                size="small"
                                                 fullWidth
                                                 label="Teléfono"
                                                 {...registro('cellphone', { required: true })}
@@ -79,6 +82,7 @@ export default function Contact() {
                                         </Grid>
                                         <Grid item xs={12}>
                                             <TextField
+                                                size="small"
                                                 fullWidth
                                                 label="Asunto"
                                                 {...registro('subject', { required: true })}
@@ -86,6 +90,7 @@ export default function Contact() {
                                         </Grid>
                                         <Grid item xs={12}>
                                             <TextField
+                                                size="small"
                                                 fullWidth
                                                 multiline={true}
                                                 rows={3}

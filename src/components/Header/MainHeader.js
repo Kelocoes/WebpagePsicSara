@@ -40,6 +40,9 @@ export default function MainHeader() {
 
     const scrollAndRoll = (id) => {
         scroller.scrollTo(sections[id], options)
+        setTimeout(() => {
+            scroller.scrollTo(sections[id], options)
+        }, 800);
         setExpandedAccordion(true)
     }
 
@@ -79,6 +82,9 @@ export default function MainHeader() {
                     onChange={(event, newValue) => {
                         setValue(newValue)
                         scroller.scrollTo(sections[newValue], options)
+                        setTimeout(() => {
+                            scroller.scrollTo(sections[newValue], options);
+                        }, 800);
                     }}
                     sx={{
                         ...config,

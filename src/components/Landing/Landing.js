@@ -28,12 +28,7 @@ export default function Landing() {
     }
 
     const particlesInit = useCallback(async engine => {
-        console.log(engine);
         await loadFull(engine);
-    }, []);
-
-    const particlesLoaded = useCallback(async container => {
-        await console.log(container);
     }, []);
 
     return (
@@ -60,7 +55,6 @@ export default function Landing() {
             <Particles
                 id="tsparticles"
                 init={particlesInit}
-                loaded={particlesLoaded}
                 options={matches ? configParticlesMobile : configParticlesDesktop}
             />
         </>

@@ -14,22 +14,24 @@ import { useInView } from 'react-intersection-observer';
 export default function AboutMe() {
     const [order, setOrder] = useState([]);
     const [currentIndex, setCurrentIndex] = useState(0);
-    const [ref, inView] = useInView({ triggerOnce: true });
+    const [ref, inView] = useInView({ triggerOnce: true, threshold: 1 });
 
     useEffect(() => {
-        const interval = setInterval(() => {
-            if (currentIndex < 4) {
-                setOrder((prevOrder) => [...prevOrder, 0]);
-                setCurrentIndex((prevIndex) => prevIndex + 1);
-            } else {
-                clearInterval(interval);
-            }
-        }, 300);
+        if (inView) {
+            const interval = setInterval(() => {
+                if (currentIndex < 4) {
+                    setOrder((prevOrder) => [...prevOrder, 0]);
+                    setCurrentIndex((prevIndex) => prevIndex + 1);
+                } else {
+                    clearInterval(interval);
+                }
+            }, 300);
 
-        return () => {
-            clearInterval(interval);
-        };
-    }, [currentIndex]);
+            return () => {
+                clearInterval(interval);
+            };
+        }
+    }, [currentIndex, inView]);
 
     return (
         <Box ref={ref} align="center" sx={{ zIndex: 1 }}>
@@ -87,7 +89,7 @@ export default function AboutMe() {
                         <Grid item xs={12} md={12} lg={3} sx={{ justifyContent: "center", display: "flex", padding: 3 }}>
                             <Grow in={order.length >= 4} timeout={1000}>
                                 <CardMedia
-                                    sx={{ maxWidth: { lg: '78%', md: '30%', sm:'45%'}, height: 'auto' }}
+                                    sx={{ maxWidth: { lg: '78%', md: '30%', sm: '45%' }, height: 'auto' }}
                                     component="img"
                                     image={AboutMePhoto}
                                     alt="About me"

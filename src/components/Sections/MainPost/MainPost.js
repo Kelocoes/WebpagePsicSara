@@ -47,7 +47,7 @@ export default function MainPost() {
                             position: 'absolute',
                             top: '50%',
                             left: '50%',
-                            backgroundColor: 'rgba(0, 0, 0, 0.2)', // Color de fondo del texto
+                            backgroundColor: 'rgba(0, 0, 0, 0.2)',
                             transform: 'translate(-50%, -50%)',
                             padding: 3,
                             borderRadius: 5

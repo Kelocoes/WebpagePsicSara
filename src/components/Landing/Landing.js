@@ -11,9 +11,12 @@ import Therapy from "../Sections/Therapy/Therapy";
 import MainPost from "../Sections/MainPost/MainPost";
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
-import configParticles from './p1.json';
+import configParticlesDesktop from './configParticlesDesktop.json';
+import configParticlesMobile from './configParticlesMobile.json';
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 export default function Landing() {
+    const matches = useMediaQuery('(max-width:600px)');
     const config = {
         backgroundColor: "#bdb3e9",
         display: "flex",
@@ -58,7 +61,7 @@ export default function Landing() {
                 id="tsparticles"
                 init={particlesInit}
                 loaded={particlesLoaded}
-                options={configParticles}
+                options={matches ? configParticlesMobile : configParticlesDesktop}
             />
         </>
     )

@@ -2,7 +2,7 @@
     "name": "Absorbers",
     "particles": {
         "number": {
-            "value": 150
+            "value": 100
         },
         "collisions": {
             "enable": true

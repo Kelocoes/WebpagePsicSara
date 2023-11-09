@@ -1,7 +1,7 @@
 import SplashScreen from './components/SplashScreen';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { useState, useEffect } from 'react';
-import Landing from './components/Landing';
+import Landing from './components/Landing/Landing';
 
 function App() {
   // Colores del logo: afa1ec 60408b

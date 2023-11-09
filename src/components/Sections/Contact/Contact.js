@@ -10,12 +10,12 @@ import Button from '@mui/material/Button';
 import { useForm } from 'react-hook-form';
 import { useInView } from 'react-intersection-observer';
 import emailjs from '@emailjs/browser';
-import { useEnv } from './EnvContext';
+import { useEnv } from '../../EnvContext';
 import { useRef } from 'react';
 
 export default function Contact() {
     const { handleSubmit: getInfo, register: registro, reset } = useForm();
-    const [ref, inView] = useInView({ triggerOnce: true, delay: 100, threshold: 1 });
+    const [ref, inView] = useInView({ triggerOnce: true });
     const { serviceId, templateId, mailPublicKey } = useEnv()
     const [isActive, setIsActive] = useState(true);
     const form = useRef();
@@ -32,11 +32,11 @@ export default function Contact() {
     }
 
     return (
-        <Box ref={ref} align="center">
+        <Box ref={ref} align="center" sx={{ zIndex: 1}}>
             <Grow in={inView} mountOnEnter unmountOnExit timeout={1000}>
                 <Paper
                     sx={{
-                        width: { xs: '70%', md: '50%' },
+                        width: { xs: '70%', md: '40%' },
                         backgroundColor: '#white',
                         padding: 1,
                         color: 'white',

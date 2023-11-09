@@ -4,7 +4,7 @@ import BottomNavigation from '@mui/material/BottomNavigation';
 import BottomNavigationAction from '@mui/material/BottomNavigationAction';
 import Fade from '@mui/material/Fade';
 import Box from '@mui/material/Box';
-import saraLogoUrl from '../assets/images/sara-logo.png'
+import saraLogoUrl from '../../assets/images/sara-logo.png'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
@@ -20,21 +20,21 @@ export default function MainHeader() {
     const config = {
         borderRadius: '20px',
         marginTop: 2,
-        boxShadow: 10,
+        boxShadow: '0 0 5px 5px rgba(0, 0, 0, 0.3)',
         position: 'fixed',
         zIndex: 2
     }
 
     const options = {
-        smooth: true,
-        offset: matches ? -100 :-110
+        smooth: 'true',
+        offset: matches ? -100 :-110,
     }
 
     const sections = {
-        1: 'Start',
+        1: 'MainPost',
         2: 'AboutMe',
         3: 'Services',
-        4: 'Appointment',
+        4: 'Therapy',
         5: 'Contact',
     }
 
@@ -67,7 +67,7 @@ export default function MainHeader() {
                             <MenuItem style={{ color: "grey" }} onClick={() => scrollAndRoll(1)}>Inicio</MenuItem>
                             <MenuItem style={{ color: "grey" }} onClick={() => scrollAndRoll(2)}>Sobre mí</MenuItem>
                             <MenuItem style={{ color: "grey" }} onClick={() => scrollAndRoll(3)}>Servicios</MenuItem>
-                            <MenuItem style={{ color: "grey" }} onClick={() => scrollAndRoll(4)}>Agenda cita</MenuItem>
+                            <MenuItem style={{ color: "grey" }} onClick={() => scrollAndRoll(4)}>Terapias</MenuItem>
                             <MenuItem style={{ color: "grey" }} onClick={() => scrollAndRoll(5)}>Contacto</MenuItem>
                         </div>
                     </Accordion>
@@ -103,7 +103,7 @@ export default function MainHeader() {
                     <BottomNavigationAction label={<h3>Inicio</h3>} sx={{ marginLeft: { lg: 0, md: 20}}}/>
                     <BottomNavigationAction label={<h3>Sobre mí</h3>} />
                     <BottomNavigationAction label={<h3>Servicios</h3>} />
-                    <BottomNavigationAction label={<h3>Agenda cita</h3>} />
+                    <BottomNavigationAction label={<h3>Terapias</h3>} />
                     <BottomNavigationAction label={<h3>Contacto</h3>} />
                 </BottomNavigation>
             }

@@ -4,7 +4,7 @@ import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
-import AboutMePhoto from '../assets/images/aboutMe.jpg';
+import AboutMePhoto from '../../../assets/images/aboutMe.jpg';
 import { useEffect, useState } from 'react';
 import Grow from '@mui/material/Grow';
 import Box from '@mui/material/Box';
@@ -14,7 +14,7 @@ import { useInView } from 'react-intersection-observer';
 export default function AboutMe() {
     const [order, setOrder] = useState([]);
     const [currentIndex, setCurrentIndex] = useState(0);
-    const [ref] = useInView({ triggerOnce: true, delay: 150 });
+    const [ref, inView] = useInView({ triggerOnce: true });
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -32,10 +32,11 @@ export default function AboutMe() {
     }, [currentIndex]);
 
     return (
-        <Box ref={ref} align="center">
-            <Zoom in={true} mountOnEnter unmountOnExit timeout={1000}>
+        <Box ref={ref} align="center" sx={{ zIndex: 1 }}>
+            <Zoom in={inView} mountOnEnter unmountOnExit timeout={1000}>
                 <Paper
                     sx={{
+                        marginTop: 5,
                         width: '90%',
                         backgroundColor: '#white',
                         padding: 1,

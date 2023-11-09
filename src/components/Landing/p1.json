@@ -45,19 +45,5 @@
                 "quantity": 10
             }
         }
-    },
-    "absorbers": {
-        "draggable": true,
-        "size": {
-            "value": {
-                "min": 2,
-                "max": 5
-            },
-            "limit": 5
-        },
-        "position": {
-            "x": 50,
-            "y": 50
-        }
     }
 }

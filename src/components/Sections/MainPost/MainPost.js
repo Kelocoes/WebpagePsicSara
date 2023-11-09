@@ -34,7 +34,7 @@ export default function MainPost() {
                     style={{ width: matches ? '100%' : '100%', height: 'auto', borderRadius: 50, boxShadow: '0 0 10px 10px rgba(0, 0, 0, 0.3)' }}
                 />
                 {matches ?
-                    <Box sx={{ backgroundColor: '#7b38c2b3', width: '100%', borderRadius: 10, paddingY: 2 }}>
+                    <Box sx={{ backgroundColor: '#aa86d3', width: '100%', borderRadius: 10, paddingY: 2 }}>
                         <Typography variant="h6">Una frase</Typography>
                         <Typography variant="body2">
                             Una descripción inspirado que sirva de refernecia

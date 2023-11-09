@@ -11,7 +11,7 @@ import Therapy from "../Sections/Therapy/Therapy";
 import MainPost from "../Sections/MainPost/MainPost";
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
-import configParticles from './configParticles.json';
+import configParticles from './p1.json';
 
 export default function Landing() {
     const config = {

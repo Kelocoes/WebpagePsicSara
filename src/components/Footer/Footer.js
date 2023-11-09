@@ -21,7 +21,8 @@ export default function Footer() {
                     backgroundColor: "secondary.main",
                     borderRadius: '20px',
                     marginBottom: 1,
-                    boxShadow: 10
+                    boxShadow: 10,
+                    zIndex: 1
                 }}
             >
                 <Container maxWidth="lg">

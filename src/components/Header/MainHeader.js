@@ -35,7 +35,7 @@ export default function MainHeader () {
     };
 
     const scrollAndRoll = (id) => {
-        scroller.scrollTo(sections[id], { smooth: 'easeInOutQuad', offset: -100 });
+        scroller.scrollTo(sections[id], { smooth: 'easeOutCubic', offset: -100 });
         setTimeout(() => {
             scroller.scrollTo(sections[id], { smooth: true, offset: -100 });
         }, 800);
@@ -81,7 +81,7 @@ export default function MainHeader () {
                     value={value}
                     onChange={(event, newValue) => {
                         setValue(newValue);
-                        scroller.scrollTo(sections[newValue], { smooth: 'easeInOutQuad', offset: -100 });
+                        scroller.scrollTo(sections[newValue], { smooth: 'easeOutCubic', offset: -100 });
                         setTimeout(() => {
                             scroller.scrollTo(sections[newValue], { smooth: true, offset: -100 });
                         }, 800);

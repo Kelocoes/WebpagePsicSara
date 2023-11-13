@@ -1,17 +1,17 @@
-import React from 'react';
-import saraLogoUrl from '../assets/images/sara-logo.png';
+import React, { useState, useEffect } from 'react';
 import CardMedia from '@mui/material/CardMedia';
-import { useState, useEffect } from 'react';
 import Fade from '@mui/material/Fade';
 
-export default function SplashScreen() {
+import saraLogoUrl from '../assets/images/sara-logo.png';
+
+export default function SplashScreen () {
     const [show, setShow] = useState(true);
 
     useEffect(() => {
         setTimeout(() => {
             setShow(false);
         }, 800);
-    })
+    });
 
     return (
         <Fade in={show} mountOnEnter unmountOnExit>
@@ -23,7 +23,7 @@ export default function SplashScreen() {
                     display: 'flex',
                     flexDirection: 'column',
                     alignItems: 'center',
-                    justifyContent: 'center',
+                    justifyContent: 'center'
                 }}
             >
                 <CardMedia
@@ -34,5 +34,5 @@ export default function SplashScreen() {
                 />
             </div>
         </Fade>
-    )
-};
+    );
+}

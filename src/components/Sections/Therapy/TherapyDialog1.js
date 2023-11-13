@@ -1,3 +1,4 @@
+import React from 'react';
 import CloseIcon from '@mui/icons-material/Close';
 import Box from '@mui/material/Box';
 import IconButton from '@mui/material/IconButton';
@@ -7,10 +8,10 @@ import DialogContentText from '@mui/material/DialogContentText';
 import Divider from '@mui/material/Divider';
 import { grey } from '@mui/material/colors';
 
-export default function TherapyDialog1(props) {
+export default function TherapyDialog1 (props) {
     const { handleClose } = props;
     return (
-        <Box sx={{ padding: 2}}>
+        <Box sx={{ padding: 2 }}>
             <Box align="right">
                 <IconButton onClick={handleClose}>
                     <CloseIcon />
@@ -19,7 +20,7 @@ export default function TherapyDialog1(props) {
             <DialogTitle variant="h6" fontWeight="bold" color="#7b38c2b3" sx={{ marginBottom: -2 }}>Opción 1</DialogTitle>
             <Divider variant="middle"/>
             <DialogContent>
-                <DialogContentText variant="body2" color={grey[700]} sx={{ textAlign: "justify"}}>
+                <DialogContentText variant="body2" color={grey[700]} sx={{ textAlign: 'justify' }}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -37,5 +38,5 @@ export default function TherapyDialog1(props) {
                 </DialogContentText>
             </DialogContent>
         </Box>
-    )
+    );
 }

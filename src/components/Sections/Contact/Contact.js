@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import Grow from '@mui/material/Grow';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
@@ -10,13 +10,13 @@ import Button from '@mui/material/Button';
 import { useForm } from 'react-hook-form';
 import { useInView } from 'react-intersection-observer';
 import emailjs from '@emailjs/browser';
-import { useEnv } from '../../EnvContext';
-import { useRef } from 'react';
 
-export default function Contact() {
+import { useEnv } from '../../EnvContext';
+
+export default function Contact () {
     const { handleSubmit: getInfo, register: registro, reset } = useForm();
     const [ref, inView] = useInView({ triggerOnce: true });
-    const { serviceId, templateId, mailPublicKey } = useEnv()
+    const { serviceId, templateId, mailPublicKey } = useEnv();
     const [isActive, setIsActive] = useState(true);
     const form = useRef();
 
@@ -28,11 +28,11 @@ export default function Contact() {
                 console.log(error.text);
             });
         reset();
-        setIsActive(false)
-    }
+        setIsActive(false);
+    };
 
     return (
-        <Box ref={ref} align="center" sx={{ zIndex: 1}}>
+        <Box ref={ref} align="center" sx={{ zIndex: 1 }}>
             <Grow in={inView} mountOnEnter unmountOnExit timeout={1000}>
                 <Paper
                     sx={{
@@ -99,7 +99,14 @@ export default function Contact() {
                                             />
                                         </Grid>
                                         <Grid item xs={12}>
-                                            <Button disabled={!isActive} variant="contained" onClick={getInfo(onSubmit)} sx={{ textTransform: 'none' }}>Enviar</Button>
+                                            <Button
+                                                disabled={!isActive}
+                                                variant="contained"
+                                                onClick={getInfo(onSubmit)}
+                                                sx={{ textTransform: 'none' }}
+                                            >
+                                                Enviar
+                                            </Button>
                                         </Grid>
                                     </Grid>
                                 </form>
@@ -109,5 +116,5 @@ export default function Contact() {
                 </Paper>
             </Grow>
         </Box>
-    )
+    );
 }

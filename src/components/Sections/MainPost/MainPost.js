@@ -1,4 +1,4 @@
-import ImageStart from '../../../assets/images/start2.png';
+import React from 'react';
 import Box from '@mui/material/Box';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
@@ -6,20 +6,17 @@ import Button from '@mui/material/Button';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { scroller } from 'react-scroll';
 
-export default function MainPost() {
+import ImageStart from '../../../assets/images/start2.png';
+
+export default function MainPost () {
     const matches = useMediaQuery('(max-width:600px)');
 
-    const options = {
-        smooth: true,
-        offset: -100
-    }
-
     const scroll = () => {
-        scroller.scrollTo('Therapy', options)
+        scroller.scrollTo('Therapy', { smooth: 'easeInOutQuad', offset: -100 });
         setTimeout(() => {
-            scroller.scrollTo('Therapy', options)
+            scroller.scrollTo('Therapy', { smooth: true, offset: -100 });
         }, 800);
-    }
+    };
 
     return (
         <Box
@@ -38,16 +35,15 @@ export default function MainPost() {
                 alt="Imagen de inicio"
                 style={{ width: matches ? '100%' : '100%', height: 'auto', borderRadius: 50, boxShadow: '0 0 10px 10px rgba(0, 0, 0, 0.3)' }}
             />
-            {matches ?
-                <Box sx={{ backgroundColor: '#aa86d3', width: '100%', borderRadius: 10, paddingY: 2 }}>
+            {matches
+                ? <Box sx={{ backgroundColor: '#aa86d3', width: '100%', borderRadius: 10, paddingY: 2 }}>
                     <Typography variant="h6">Una frase</Typography>
                     <Typography variant="body2">
                         Una descripción inspirado que sirva de refernecia
                     </Typography>
                     <Button variant="outlined" color="secondary" onClick={() => scroll()}>¡Pruébame</Button>
                 </Box>
-                :
-                <Box
+                : <Box
                     sx={{
                         position: 'absolute',
                         top: '50%',
@@ -70,5 +66,5 @@ export default function MainPost() {
                 </Box>
             }
         </Box>
-    )
+    );
 }

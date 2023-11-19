@@ -93,7 +93,7 @@ export default function Therapy () {
                                                 sx={{ fontSize: 25, textAlign: 'center', paddingX: 2, fontFamily: 'Roboto' }}
                                                 color={grey[700]}
                                             >
-                                                $ 50.000 cop
+                                                $ 50.000COP
                                             </Typography>
                                             <Box align="right">
                                                 <Link
@@ -133,7 +133,7 @@ export default function Therapy () {
                                                 sx={{ fontSize: 25, textAlign: 'center', paddingX: 2, fontFamily: 'Roboto' }}
                                                 color={grey[700]}
                                             >
-                                                $ 190.000 cop
+                                                $ 190.000COP
                                             </Typography>
                                             <Box align="right">
                                                 <Link
@@ -173,7 +173,7 @@ export default function Therapy () {
                                                 sx={{ fontSize: 25, textAlign: 'center', paddingX: 2, fontFamily: 'Roboto' }}
                                                 color={grey[700]}
                                             >
-                                                $ 450.000 cop
+                                                $ 450.000COP
                                             </Typography>
                                             <Box align="right">
                                                 <Link

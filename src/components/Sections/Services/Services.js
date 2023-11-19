@@ -11,11 +11,45 @@ import Grow from '@mui/material/Grow';
 import React, { useEffect, useState } from 'react';
 import Divider from '@mui/material/Divider';
 import { useInView } from 'react-intersection-observer';
+import Link from '@mui/material/Link';
+import Dialog from '@mui/material/Dialog';
+
+import ServiceDialog1 from './ServiceDialog1';
+import ServiceDialog2 from './ServiceDialog2';
+import ServiceDialog3 from './ServiceDialog3';
+import ServiceDialog4 from './ServiceDialog4';
 
 export default function Services () {
     const [order, setOrder] = useState([]);
     const [currentIndex, setCurrentIndex] = useState(0);
     const [ref, inView] = useInView({ triggerOnce: true });
+    const [open, setOpen] = useState(false);
+    const [open1, setOpen1] = useState(false);
+    const [open2, setOpen2] = useState(false);
+    const [open3, setOpen3] = useState(false);
+
+    const handleClickOpen = () => {
+        setOpen(true);
+    };
+
+    const handleClickOpen1 = () => {
+        setOpen1(true);
+    };
+
+    const handleClickOpen2 = () => {
+        setOpen2(true);
+    };
+
+    const handleClickOpen3 = () => {
+        setOpen3(true);
+    };
+
+    const handleClose = () => {
+        setOpen(false);
+        setOpen1(false);
+        setOpen2(false);
+        setOpen3(false);
+    };
 
     useEffect(() => {
         if (inView) {
@@ -75,6 +109,17 @@ export default function Services () {
                                         <br />
                                         ¡Estoy aquí para acompañarte en tu viaje hacia el bienestar!
                                     </Typography>
+                                    <Box align="right">
+                                        <Link
+                                            component="button"
+                                            variant="body1"
+                                            color="inherit"
+                                            sx={{ fontSize: 15, '&:hover': { fontSize: 16 } }}
+                                            onClick={handleClickOpen}
+                                        >
+                                            Saber más...
+                                        </Link>
+                                    </Box>
                                 </Box>
                             </Grow>
                         </Grid>
@@ -91,15 +136,25 @@ export default function Services () {
                                     }}
                                 >
                                     <Typography sx={{ fontSize: 30, textShadow: '2px 2px 2px rgba(0, 0, 0, 0.2)' }}>
-                                        Orientación <br /> vocacional
+                                        Capacitación <br /> empresarial
                                     </Typography>
-                                    <AutoStoriesIcon sx={{ fontSize: 75 }} />
+                                    <ApartmentIcon sx={{ fontSize: 75 }} />
                                     <Typography sx={{ fontSize: 18, textAlign: 'justify', paddingX: 2, paddingTop: 1 }}>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                                        , sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                                        ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.
+                                        Ofrezco sesiones personalizadas diseñadas específicamente para las necesidades únicas
+                                        de tu empresa. Cada programa es una experiencia adaptada que impulsa el rendimiento.
+                                        Descubre cómo a través de estos espacios pueden elevar la motivación y la productividad en tu empresa.
                                     </Typography>
+                                    <Box align="right">
+                                        <Link
+                                            component="button"
+                                            variant="body1"
+                                            color="inherit"
+                                            sx={{ fontSize: 15, '&:hover': { fontSize: 16 } }}
+                                            onClick={handleClickOpen3}
+                                        >
+                                            Saber más...
+                                        </Link>
+                                    </Box>
                                 </Box>
                             </Grow>
                         </Grid>
@@ -120,11 +175,22 @@ export default function Services () {
                                     </Typography>
                                     <Diversity1Icon sx={{ fontSize: 75 }} />
                                     <Typography sx={{ fontSize: 18, textAlign: 'justify', paddingX: 2, paddingTop: 1 }}>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                                        , sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                                        ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.
+                                        Tu familia es única, y el apoyo que ofrezco también lo es. Por eso, cuento con estrategias
+                                        personalizadas para ayudarte a enfrentar los desafíos específicos que puedan surgir en tu familia.
+                                        <br />
+                                        Hagamos de la crianza un viaje que todos disfruten juntos.
                                     </Typography>
+                                    <Box align="right">
+                                        <Link
+                                            component="button"
+                                            variant="body1"
+                                            color="inherit"
+                                            sx={{ fontSize: 15, '&:hover': { fontSize: 16 } }}
+                                            onClick={handleClickOpen2}
+                                        >
+                                            Saber más...
+                                        </Link>
+                                    </Box>
                                 </Box>
                             </Grow>
                         </Grid>
@@ -141,21 +207,63 @@ export default function Services () {
                                     }}
                                 >
                                     <Typography sx={{ fontSize: 30, textShadow: '2px 2px 2px rgba(0, 0, 0, 0.2)' }}>
-                                        Capacitación <br /> empresaria
-                                        l</Typography>
-                                    <ApartmentIcon sx={{ fontSize: 75 }} />
-                                    <Typography sx={{ fontSize: 18, textAlign: 'justify', paddingX: 2, paddingTop: 1 }}>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                                        , sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                                        ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.
+                                        Orientación <br /> vocacional
                                     </Typography>
+                                    <AutoStoriesIcon sx={{ fontSize: 75 }} />
+                                    <Typography sx={{ fontSize: 18, textAlign: 'justify', paddingX: 2, paddingTop: 1 }}>
+                                        Si te encuentras en un momento de indecisión sobre tu carrera o vocación,
+                                        puedo ayudarte a explorar tus intereses,
+                                        pasiones y habilidades, mediante técnicas de evaluación y conversaciones reflexivas, identificaremos opciones
+                                        profesionales que se alineen con tu auténtico ser.
+                                        <br />
+                                        Te apoyaré en la toma de decisiones para que puedas avanzar en el camino que te motive y llene de satisfacción
+                                        mediante la exploración de tus metas, sueños y valores.
+                                    </Typography>
+                                    <Box align="right">
+                                        <Link
+                                            component="button"
+                                            variant="body1"
+                                            color="inherit"
+                                            sx={{ fontSize: 15, '&:hover': { fontSize: 16 } }}
+                                            onClick={handleClickOpen1}
+                                        >
+                                            Saber más...
+                                        </Link>
+                                    </Box>
                                 </Box>
                             </Grow>
                         </Grid>
                     </Grid>
                 </Paper>
             </Zoom>
+            <Dialog
+                open={open}
+                onClose={handleClose}
+                PaperProps={{ sx: { borderRadius: 5 } }}
+            >
+                <ServiceDialog1 handleClose={handleClose} />
+            </Dialog>
+            <Dialog
+                open={open1}
+                onClose={handleClose}
+                PaperProps={{ sx: { borderRadius: 5 } }}
+            >
+                <ServiceDialog2 handleClose={handleClose} />
+            </Dialog>
+            <Dialog
+                open={open2}
+                onClose={handleClose}
+                PaperProps={{ sx: { borderRadius: 5 } }}
+            >
+                <ServiceDialog3 handleClose={handleClose} />
+            </Dialog>
+            <Dialog
+                open={open3}
+                onClose={handleClose}
+                PaperProps={{ sx: { borderRadius: 5 } }}
+            >
+                <ServiceDialog4 handleClose={handleClose} />
+            </Dialog>
         </Box>
     );
 }

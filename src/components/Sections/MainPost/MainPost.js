@@ -37,31 +37,31 @@ export default function MainPost () {
             />
             {matches
                 ? <Box sx={{ backgroundColor: '#aa86d3', width: '100%', borderRadius: 10, paddingY: 2 }}>
-                    <Typography variant="h6">Una frase</Typography>
-                    <Typography variant="body2">
-                        Una descripción inspirado que sirva de refernecia
+                    <Typography variant="h6" sx={{ fontSize: 20, paddingX: 2 }}>
+                        El primer paso hacia tu transformación es reconocer aquello que deseas cambiar.
                     </Typography>
-                    <Button variant="outlined" color="secondary" onClick={() => scroll()}>¡Pruébame</Button>
+                    <Button variant="outlined" color="secondary" onClick={() => scroll()}>¡Vamos!</Button>
                 </Box>
                 : <Box
                     sx={{
                         position: 'absolute',
                         top: '50%',
                         left: '50%',
-                        backgroundColor: 'rgba(0, 0, 0, 0.2)',
+                        backgroundColor: 'rgba(0, 0, 0, 0.35)',
                         transform: 'translate(-50%, -50%)',
                         padding: 3,
                         borderRadius: 5
                     }}
                 >
-                    <Typography variant="h6">Una frase</Typography>
-                    <Typography variant="body2">
-                        Una descripción inspirado que sirva de refernecia
+                    <Typography variant="h6">
+                        El primer paso hacia tu transformación es
+                        <br />
+                        reconocer aquello que deseas cambiar.
                     </Typography>
                     <Button variant="outlined" color="secondary" size="small"
                         onClick={() => scroll()}
                     >
-                        ¡Pruébame!
+                        ¡Vamos!
                     </Button>
                 </Box>
             }

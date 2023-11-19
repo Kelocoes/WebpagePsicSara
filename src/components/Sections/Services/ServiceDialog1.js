@@ -8,11 +8,11 @@ import DialogContentText from '@mui/material/DialogContentText';
 import Divider from '@mui/material/Divider';
 import { grey } from '@mui/material/colors';
 
-export default function TherapyDialog3 (props) {
+export default function ServiceDialog1 (props) {
     const { handleClose } = props;
     return (
         <Box sx={{ padding: 2 }}>
-            <Box align="right">
+            <Box align="right" >
                 <IconButton onClick={handleClose}>
                     <CloseIcon />
                 </IconButton>
@@ -20,23 +20,22 @@ export default function TherapyDialog3 (props) {
             <DialogTitle variant="h6" fontWeight="bold" color="#7b38c2b3"
                 sx={{ marginBottom: -2, textAlign: 'center', marginTop: -4 }}
             >
-                Paquete trimestral
+                Psicoterapia individual
             </DialogTitle>
             <Divider variant="middle"/>
             <DialogContent>
                 <DialogContentText variant="body2" color={grey[700]} sx={{ textAlign: { sm: 'justify', xs: 'left' } }}>
-                    Este es el primer paso para embarcarte en tu propio camino de sanación, crecimiento y aprendizaje. Las sesiones
-                    en paquete trimestral, adaptadas a tus necesidades, son las que más muestran resultados, debido a el proceso continuo
-                    que se lleva.
+                    Mis servicios de psicoterapia están diseñados para todas las edades,
+                    desde niños hasta adultos mayores. Con un enfoque completamente personalizado
+                    te guiaré en el proceso de descubrir tus fortalezas internas y aprender estrategias para superar obstáculos.
                     <br /><br />
-                    Incluye un total de 10 sesiones, distribuidas durante 3 meses con una duración de 45 -50 minutos y cuanta con un
-                    descuento del 10%, puedes elegir la modalidad que se ajuste a tu comodidad:
+                    &emsp;•   Ofrezco un espacio seguro y confidencial donde puedes compartir tus pensamientos y emociones sin juicios.
                     <br /><br />
-                    •   Sesiones presenciales.
-                    <br />
-                    •   Sesiones en línea (videollamada o llamada por meet).
+                    &emsp;•   Te brindaré apoyo emocional y herramientas para manejar el estrés, la ansiedad, la depresión u otros desafíos
+                    que puedas estar enfrentando.
                     <br /><br />
-                    ¡Estamos aquí para apoyarte en cada paso de tu camino hacia el bienestar!
+                    &emsp;•   Trabajaremos juntos en el desarrollo de habilidades de afrontamiento y en la construcción de una mente más
+                    resiliente y fuerte.
                 </DialogContentText>
             </DialogContent>
         </Box>

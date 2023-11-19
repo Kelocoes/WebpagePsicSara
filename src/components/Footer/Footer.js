@@ -10,6 +10,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import IconButton from '@mui/material/IconButton';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import Fade from '@mui/material/Fade';
+import { grey } from '@mui/material/colors';
 
 export default function Footer () {
     return (
@@ -38,16 +39,16 @@ export default function Footer () {
                                     Mis redes sociales
                                 </Typography>
                                 <IconButton href="https://www.facebook.com/sara.plaza2811" target="_blank">
-                                    <FacebookIcon sx={{ color: 'lightdark' }} />
+                                    <FacebookIcon sx={{ color: 'lightdark', '&:hover': { color: grey[800], transform: 'scale(1.15)' } }} />
                                 </IconButton>
                                 <IconButton href="https://www.instagram.com/psicosaraplaza/" target="_blank">
-                                    <InstagramIcon sx={{ color: 'lightdark' }} />
+                                    <InstagramIcon sx={{ color: 'lightdark', '&:hover': { color: grey[800], transform: 'scale(1.15)' } }} />
                                 </IconButton>
                                 <IconButton href="https://www.linkedin.com/in/sara-elizabeth-plaza-plaza-1094a024b/" target="_blank">
-                                    <LinkedInIcon sx={{ color: 'lightdark' }} />
+                                    <LinkedInIcon sx={{ color: 'lightdark', '&:hover': { color: grey[800], transform: 'scale(1.15)' } }} />
                                 </IconButton>
                                 <IconButton href="https://api.whatsapp.com/send/?phone=573182333576" target="_blank">
-                                    <WhatsAppIcon sx={{ color: 'lightdark' }} />
+                                    <WhatsAppIcon sx={{ color: 'lightdark', '&:hover': { color: grey[800], transform: 'scale(1.15)' } }} />
                                 </IconButton>
                             </Box>
                         </Grid>

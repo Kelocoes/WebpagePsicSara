@@ -8,7 +8,7 @@ import DialogContentText from '@mui/material/DialogContentText';
 import Divider from '@mui/material/Divider';
 import { grey } from '@mui/material/colors';
 
-export default function TherapyDialog3 (props) {
+export default function ServiceDialog4 (props) {
     const { handleClose } = props;
     return (
         <Box sx={{ padding: 2 }}>
@@ -20,23 +20,16 @@ export default function TherapyDialog3 (props) {
             <DialogTitle variant="h6" fontWeight="bold" color="#7b38c2b3"
                 sx={{ marginBottom: -2, textAlign: 'center', marginTop: -4 }}
             >
-                Paquete trimestral
+                Capacitación empresarial
             </DialogTitle>
             <Divider variant="middle"/>
             <DialogContent>
                 <DialogContentText variant="body2" color={grey[700]} sx={{ textAlign: { sm: 'justify', xs: 'left' } }}>
-                    Este es el primer paso para embarcarte en tu propio camino de sanación, crecimiento y aprendizaje. Las sesiones
-                    en paquete trimestral, adaptadas a tus necesidades, son las que más muestran resultados, debido a el proceso continuo
-                    que se lleva.
-                    <br /><br />
-                    Incluye un total de 10 sesiones, distribuidas durante 3 meses con una duración de 45 -50 minutos y cuanta con un
-                    descuento del 10%, puedes elegir la modalidad que se ajuste a tu comodidad:
-                    <br /><br />
-                    •   Sesiones presenciales.
-                    <br />
-                    •   Sesiones en línea (videollamada o llamada por meet).
-                    <br /><br />
-                    ¡Estamos aquí para apoyarte en cada paso de tu camino hacia el bienestar!
+                    Sé lo crucial que es mantener un equipo motivado y un ambiente saludable para
+                    alcanzar el éxito empresarial. Es por eso que, a través de conferencias, talleres
+                    y sesiones, no solo impulsamos la productividad, sino también el bienestar de tu equipo,
+                    trabajando en habilidades de comunicación, manejo del estrés, bienestar emocional, liderazgo,
+                    trabajo en equipo, manejo de conflictos, ¡y mucho más!
                 </DialogContentText>
             </DialogContent>
         </Box>

@@ -2,7 +2,7 @@
     "name": "Absorbers",
     "particles": {
         "number": {
-            "value": 100
+            "value": 150
         },
         "collisions": {
             "enable": true
@@ -23,26 +23,6 @@
             "value": {
                 "min": 5,
                 "max": 10
-            }
-        },
-        "move": {
-            "enable": true,
-            "speed": 0.5,
-            "direction": "top",
-            "straight": true,
-            "warp": true
-        }
-    },
-    "interactivity": {
-        "events": {
-            "onClick": {
-                "enable": true,
-                "mode": "push"
-            }
-        },
-        "modes": {
-            "push": {
-                "quantity": 10
             }
         }
     }

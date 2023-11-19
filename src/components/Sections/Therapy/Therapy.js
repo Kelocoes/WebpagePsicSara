@@ -79,11 +79,21 @@ export default function Therapy () {
                                             alt="Therapy option 1"
                                         />
                                         <CardContent>
-                                            <Typography variant="h6" fontWeight="bold" color="#7b38c2b3">Opción 1</Typography>
+                                            <Typography variant="h6" fontWeight="bold" color="#7b38c2b3">Sesión personalizada</Typography>
                                             <Divider sx={{ marginBottom: 1, width: '50%' }} />
-                                            <Typography variant="body1" sx={{ fontSize: 15, textAlign: 'justify' }} color={grey[700]}>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                            <Typography variant="body1"
+                                                sx={{ fontSize: 20, textAlign: 'center', paddingX: 2 }}
+                                                color={grey[700]}
+                                            >
+                                                Adaptada a tus necesidades.
+                                                <br />
+                                                45 - 50 minutos
+                                            </Typography>
+                                            <Typography variant="body1"
+                                                sx={{ fontSize: 25, textAlign: 'center', paddingX: 2, fontFamily: 'Roboto' }}
+                                                color={grey[700]}
+                                            >
+                                                $ 50.000 cop
                                             </Typography>
                                             <Box align="right">
                                                 <Link
@@ -109,11 +119,21 @@ export default function Therapy () {
                                             alt="Therapy option 1"
                                         />
                                         <CardContent>
-                                            <Typography variant="h6" fontWeight="bold" color="#7b38c2b3">Opción 2</Typography>
+                                            <Typography variant="h6" fontWeight="bold" color="#7b38c2b3">Paquete mensual</Typography>
                                             <Divider sx={{ marginBottom: 1, width: '50%' }} />
-                                            <Typography variant="body1" sx={{ fontSize: 15, textAlign: 'justify' }} color={grey[700]}>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                            <Typography variant="body1"
+                                                sx={{ fontSize: 20, textAlign: 'center', paddingX: 2 }}
+                                                color={grey[700]}
+                                            >
+                                                Incluye 4 sesiones, 1 por semana
+                                                <br />
+                                                45-50 minutos por sesión semanal.
+                                            </Typography>
+                                            <Typography variant="body1"
+                                                sx={{ fontSize: 25, textAlign: 'center', paddingX: 2, fontFamily: 'Roboto' }}
+                                                color={grey[700]}
+                                            >
+                                                $ 190.000 cop
                                             </Typography>
                                             <Box align="right">
                                                 <Link
@@ -139,11 +159,21 @@ export default function Therapy () {
                                             alt="Therapy option 1"
                                         />
                                         <CardContent>
-                                            <Typography variant="h6" fontWeight="bold" color="#7b38c2b3">Opción 3</Typography>
+                                            <Typography variant="h6" fontWeight="bold" color="#7b38c2b3">Paquete trimestral</Typography>
                                             <Divider sx={{ marginBottom: 1, width: '50%' }} />
-                                            <Typography variant="body1" sx={{ fontSize: 15, textAlign: 'justify' }} color={grey[700]}>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                            <Typography variant="body1"
+                                                sx={{ fontSize: 20, textAlign: 'center', paddingX: 2 }}
+                                                color={grey[700]}
+                                            >
+                                                Incluye 10 sesiones durante 3 meses.
+                                                <br />
+                                                45-50 minutos
+                                            </Typography>
+                                            <Typography variant="body1"
+                                                sx={{ fontSize: 25, textAlign: 'center', paddingX: 2, fontFamily: 'Roboto' }}
+                                                color={grey[700]}
+                                            >
+                                                $ 450.000 cop
                                             </Typography>
                                             <Box align="right">
                                                 <Link
@@ -165,18 +195,21 @@ export default function Therapy () {
                     <Dialog
                         open={open}
                         onClose={handleClose}
+                        PaperProps={{ sx: { borderRadius: 5 } }}
                     >
                         <TherapyDialog1 handleClose={handleClose} />
                     </Dialog>
                     <Dialog
                         open={open1}
                         onClose={handleClose}
+                        PaperProps={{ sx: { borderRadius: 5 } }}
                     >
                         <TherapyDialog2 handleClose={handleClose} />
                     </Dialog>
                     <Dialog
                         open={open2}
                         onClose={handleClose}
+                        PaperProps={{ sx: { borderRadius: 5 } }}
                     >
                         <TherapyDialog3 handleClose={handleClose} />
                     </Dialog>

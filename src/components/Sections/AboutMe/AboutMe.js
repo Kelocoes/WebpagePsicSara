@@ -86,17 +86,19 @@ export default function AboutMe () {
                                         Utilizo un enfoque humanista centrado en la persona en los procesos de psicoterapia,
                                         ya que se basa en la empatía, comprensión y respeto hacia cada individuo.
                                         <br /><br />
-                                        Me fascina la lectura, las series y conocer las distintas culturas alrededor del mundo. Amo a los animales,
-                                        soy fanática del chocolate y adoro los días lluviosos. Creo firmemente que los momentos
-                                        difíciles llegan a tu vida procesos para hacerte más fuerte y ayudarte a alcanzar tu mejor versión.
-                                        Mi amor por la psicología me ha enseñado lo hermoso que puede ser el proceso de sanación y ha sido mi
-                                        herramienta para encontrar mi propósito y vocación. Mi pasión es ayudarte a construir una vida llena
-                                        de bienestar emocional y mental, ¡porque te lo mereces! Así que espero que juntos podamos explorar el
-                                        poder de la psicología para superar obstáculos, descubrir tu verdadero potencial y alcanzar una vida plena
-                                        y significativa.
+                                        Me fascina la lectura, las series y conocer las distintas culturas alrededor del mundo.
+                                        ¡Amo a los animales, soy fanática del chocolate y adoro los días lluviosos! Creo firmemente
+                                        que los momentos difíciles llegan a tu vida como procesos para hacerte más fuerte y ayudarte
+                                        a alcanzar tu mejor versión. Mi amor por la psicología me ha enseñado lo hermoso que puede
+                                        ser el proceso de sanación y ha sido mi herramienta para encontrar mi propósito y vocación.
+                                        <br />
+                                        Mi pasión es ayudarte a construir una vida llena de bienestar emocional y mental, ¡porque te
+                                        lo mereces! Así que espero que juntos podamos explorar el poder de la psicología para superar
+                                        obstáculos, descubrir tu verdadero potencial y alcanzar una vida plena y significativa.
                                         <br /><br />
-                                        Entonces, si estás listo para embarcarte en un viaje de autodescubrimiento y crecimiento personal, te invito a
-                                        ponerte en contacto conmigo y empezar, desde ya, a cuidar de ti mismo desde el interior. ¿Te animas?
+                                        Entonces, estás listo para embarcarte en un viaje de autodescubrimiento y crecimiento personal,
+                                        te invito a ponerte en contacto conmigo y empezar, desde ya, a cuidar de ti mismo desde el interior.
+                                        ¿Te animas?
                                     </Typography>
                                 </Box>
                             </Grow>

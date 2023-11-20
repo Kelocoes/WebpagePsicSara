@@ -39,16 +39,40 @@ export default function Footer () {
                                     Mis redes sociales
                                 </Typography>
                                 <IconButton href="https://www.facebook.com/sara.plaza2811" target="_blank">
-                                    <FacebookIcon sx={{ color: 'lightdark', '&:hover': { color: grey[800], transform: 'scale(1.15)' } }} />
+                                    <FacebookIcon
+                                        sx={{
+                                            color: 'lightdark',
+                                            '&:hover': { color: grey[800], transform: 'scale(1.15)' },
+                                            transition: 'transform  0.2s ease'
+                                        }}
+                                    />
                                 </IconButton>
                                 <IconButton href="https://www.instagram.com/psicosaraplaza/" target="_blank">
-                                    <InstagramIcon sx={{ color: 'lightdark', '&:hover': { color: grey[800], transform: 'scale(1.15)' } }} />
+                                    <InstagramIcon
+                                        sx={{
+                                            color: 'lightdark',
+                                            '&:hover': { color: grey[800], transform: 'scale(1.15)' },
+                                            transition: 'transform  0.2s ease'
+                                        }}
+                                    />
                                 </IconButton>
                                 <IconButton href="https://www.linkedin.com/in/sara-elizabeth-plaza-plaza-1094a024b/" target="_blank">
-                                    <LinkedInIcon sx={{ color: 'lightdark', '&:hover': { color: grey[800], transform: 'scale(1.15)' } }} />
+                                    <LinkedInIcon
+                                        sx={{
+                                            color: 'lightdark',
+                                            '&:hover': { color: grey[800], transform: 'scale(1.15)' },
+                                            transition: 'transform  0.2s ease'
+                                        }}
+                                    />
                                 </IconButton>
                                 <IconButton href="https://api.whatsapp.com/send/?phone=573182333576" target="_blank">
-                                    <WhatsAppIcon sx={{ color: 'lightdark', '&:hover': { color: grey[800], transform: 'scale(1.15)' } }} />
+                                    <WhatsAppIcon
+                                        sx={{
+                                            color: 'lightdark',
+                                            '&:hover': { color: grey[800], transform: 'scale(1.15)' },
+                                            transition: 'transform  0.2s ease'
+                                        }}
+                                    />
                                 </IconButton>
                             </Box>
                         </Grid>

@@ -69,7 +69,7 @@ export default function Therapy () {
                     <Grid item xs={12} md={1} />
                     <Grid item xs={12} md={10}>
                         <Grid container spacing={5}>
-                            <Grid item xs={12} sm={4}>
+                            <Grid item xs={12} sm={4} sx={{ transition: 'transform 0.2s ease', '&:hover': { transform: 'scale(1.025)' } }}>
                                 <Grow in={order.length >= 1} timeout={1000}>
                                     <Card sx={{ borderRadius: 5 }} elevation={10}>
                                         <CardMedia
@@ -109,7 +109,7 @@ export default function Therapy () {
                                     </Card>
                                 </Grow>
                             </Grid>
-                            <Grid item xs={12} sm={4}>
+                            <Grid item xs={12} sm={4} sx={{ transition: 'transform 0.2s ease', '&:hover': { transform: 'scale(1.025)' } }}>
                                 <Grow in={order.length >= 2} timeout={1000}>
                                     <Card sx={{ borderRadius: 5 }} elevation={10}>
                                         <CardMedia
@@ -149,7 +149,7 @@ export default function Therapy () {
                                     </Card>
                                 </Grow>
                             </Grid>
-                            <Grid item xs={12} sm={4}>
+                            <Grid item xs={12} sm={4} sx={{ transition: 'transform 0.2s ease', '&:hover': { transform: 'scale(1.025)' } }}>
                                 <Grow in={order.length >= 3} timeout={1000}>
                                     <Card sx={{ borderRadius: 5 }} elevation={10}>
                                         <CardMedia

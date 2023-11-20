@@ -11,8 +11,23 @@ import MenuItem from '@mui/material/MenuItem';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import CardMedia from '@mui/material/CardMedia';
 import { scroller } from 'react-scroll';
+import { styled } from '@mui/system';
 
 import saraLogoUrl from '../../assets/images/sara-logo.png';
+
+const StyledBottomNavigationAction = styled(BottomNavigationAction)`
+        h3 {
+            transition: color 0.3s ease;
+            transition: transform 0.3s ease;
+        }
+
+        &:hover {
+            h3 {
+                color: ${({ theme }) => theme.palette.primary.main};
+                transform: scale(1.1);
+            }
+        }
+    `;
 
 export default function MainHeader () {
     const [value, setValue] = useState(0);
@@ -62,7 +77,7 @@ export default function MainHeader () {
                             id="panel1a-header"
                         >
                             <img
-                                style={{ width: '50px', marginLeft: 25, marginTop: 3, marginRight: 1 }}
+                                style={{ width: '50px', marginLeft: 22, marginTop: 3, marginRight: 1 }}
                                 src={saraLogoUrl}
                                 alt="Logo"
                             />
@@ -100,17 +115,17 @@ export default function MainHeader () {
                         }}
                     >
                         <CardMedia
-                            sx={{ width: '50px', marginTop: { xl: '8px', lg: '4px', xs: '4px' } }}
+                            sx={{ width: '55px', marginTop: { xl: '3px', lg: '3px', xs: '3px' } }}
                             component="img"
                             image={saraLogoUrl}
                             alt="About me"
                         />
                     </Box>
-                    <BottomNavigationAction label={<h3>Inicio</h3>} sx={{ marginLeft: { lg: 0, md: 20 } }}/>
-                    <BottomNavigationAction label={<h3>Sobre mí</h3>} />
-                    <BottomNavigationAction label={<h3>Servicios</h3>} />
-                    <BottomNavigationAction label={<h3>Terapias</h3>} />
-                    <BottomNavigationAction label={<h3>Contacto</h3>} />
+                    <StyledBottomNavigationAction label={<h3>Inicio</h3>} sx={{ marginLeft: { lg: 0, md: 20 } }} />
+                    <StyledBottomNavigationAction label={<h3>Sobre mí</h3>} />
+                    <StyledBottomNavigationAction label={<h3>Servicios</h3>} />
+                    <StyledBottomNavigationAction label={<h3>Terapias</h3>} />
+                    <StyledBottomNavigationAction label={<h3>Contacto</h3>} />
                 </BottomNavigation>
             }
         </Fade>

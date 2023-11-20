@@ -84,7 +84,9 @@ export default function Services () {
                     <Typography variant="h4" fontWeight="bold" align="center">Servicios</Typography>
                     <Divider variant="middle" sx={{ marginX: 10 }} />
                     <Grid container spacing={3} justifyContent="center" sx={{ padding: 1 }}>
-                        <Grid item sm={12} md={6} lg={3}>
+                        <Grid item sm={12} md={6} lg={3}
+                            sx={{ transition: 'transform 0.2s ease', '&:hover': { transform: 'scale(1.025)' } }}
+                        >
                             <Grow in={order.length >= 1} timeout={1000}>
                                 <Box
                                     align="center"
@@ -123,7 +125,9 @@ export default function Services () {
                                 </Box>
                             </Grow>
                         </Grid>
-                        <Grid item sm={12} md={6} lg={3}>
+                        <Grid item sm={12} md={6} lg={3}
+                            sx={{ transition: 'transform 0.2s ease', '&:hover': { transform: 'scale(1.025)' } }}
+                        >
                             <Grow in={order.length >= 2} timeout={1000}>
                                 <Box
                                     align="center"
@@ -158,7 +162,9 @@ export default function Services () {
                                 </Box>
                             </Grow>
                         </Grid>
-                        <Grid item sm={12} md={6} lg={3}>
+                        <Grid item sm={12} md={6} lg={3}
+                            sx={{ transition: 'transform 0.2s ease', '&:hover': { transform: 'scale(1.025)' } }}
+                        >
                             <Grow in={order.length >= 3} timeout={1000}>
                                 <Box
                                     align="center"
@@ -194,7 +200,9 @@ export default function Services () {
                                 </Box>
                             </Grow>
                         </Grid>
-                        <Grid item sm={12} md={6} lg={3}>
+                        <Grid item sm={12} md={6} lg={3}
+                            sx={{ transition: 'transform 0.2s ease', '&:hover': { transform: 'scale(1.025)' } }}
+                        >
                             <Grow in={order.length >= 4} timeout={1000}>
                                 <Box
                                     align="center"

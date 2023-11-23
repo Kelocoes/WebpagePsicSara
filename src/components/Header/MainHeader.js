@@ -103,7 +103,7 @@ export default function MainHeader () {
                     }}
                     sx={{
                         ...config,
-                        width: '91%',
+                        width: '90vw',
                         height: '60px'
                     }}
                 >

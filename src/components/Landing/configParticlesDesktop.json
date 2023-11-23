@@ -25,5 +25,8 @@
                 "max": 10
             }
         }
+    },
+    "background": {
+        "color": "#bdb3e9"
     }
 }

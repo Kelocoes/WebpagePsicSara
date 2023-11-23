@@ -13,6 +13,11 @@ import AddIcon from '@mui/icons-material/Add';
 import StarIcon from '@mui/icons-material/Star';
 import { grey } from '@mui/material/colors';
 import Divider from '@mui/material/Divider';
+import { styled } from '@mui/system';
+
+const StyledVerticalTimeline = styled(VerticalTimeline)({
+    zIndex: 1
+});
 
 export default function TimeLine () {
     const [visible1, setVisible1] = useState(false);
@@ -20,7 +25,7 @@ export default function TimeLine () {
 
     return (
         <Box sx={{ marginX: 3 }}>
-            <VerticalTimeline>
+            <StyledVerticalTimeline>
                 <VerticalTimelineElement
                     style={{ zIndex: 1 }}
                     className="vertical-timeline-element--work"
@@ -30,7 +35,7 @@ export default function TimeLine () {
                     icon={<PsychologyIcon />}
                 >
                     <Typography variant="h6" sx={{ fontWeight: 'bold' }} color={grey[700]}>Psicóloga</Typography>
-                    <Divider sx={{ borderBottomWidth: 2 }}/>
+                    <Divider sx={{ borderBottomWidth: 2 }} />
                     <Typography variant="subtitle1" color="grey">Independiente</Typography>
                     <Typography variant="body1" color="grey">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -46,7 +51,7 @@ export default function TimeLine () {
                     icon={<FoundationIcon />}
                 >
                     <Typography variant="h6" sx={{ fontWeight: 'bold' }} color={grey[700]}>Psicóloga</Typography>
-                    <Divider sx={{ borderBottomWidth: 2 }}/>
+                    <Divider sx={{ borderBottomWidth: 2 }} />
                     <Typography variant="subtitle1" color="grey">Fundación vida Luz del Sol Palmira</Typography>
                     <Typography variant="body1" color="grey">
                         Acompañamiento en psicológico, remisiones, atención a padres
@@ -72,7 +77,7 @@ export default function TimeLine () {
                             icon={<SchoolIcon />}
                         >
                             <Typography variant="h6" sx={{ fontWeight: 'bold' }} color={grey[700]}>Psicóloga</Typography>
-                            <Divider sx={{ borderBottomWidth: 2 }}/>
+                            <Divider sx={{ borderBottomWidth: 2 }} />
                             <Typography variant="subtitle1" color="grey">Universidad Pontificia Bolivariana</Typography>
                             <Typography variant="body1" color="grey">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -88,7 +93,7 @@ export default function TimeLine () {
                             icon={<FamilyRestroomIcon />}
                         >
                             <Typography variant="h6" sx={{ fontWeight: 'bold' }} color={grey[700]}>Practicante Psicología educativa</Typography>
-                            <Divider sx={{ borderBottomWidth: 2 }}/>
+                            <Divider sx={{ borderBottomWidth: 2 }} />
                             <Typography variant="subtitle1" color="grey">Colegio San José del Ávila</Typography>
                             <Typography variant="body1" color="grey">
                                 Acompañamiento en psico-orientación, remisiones, escuela para padres, desarrollo de
@@ -116,7 +121,7 @@ export default function TimeLine () {
                             icon={<LocalHospitalIcon />}
                         >
                             <Typography variant="h6" sx={{ fontWeight: 'bold' }} color={grey[700]}>Practicante Psicología clínica</Typography>
-                            <Divider sx={{ borderBottomWidth: 2 }}/>
+                            <Divider sx={{ borderBottomWidth: 2 }} />
                             <Typography variant="subtitle1" color="grey">Gesencro IPS</Typography>
                             <Typography variant="body1" color="grey">
                                 Tele consulta pacientes, psicoeducaciones grupales y en sala, taller y atención presencial a pacientes.
@@ -131,7 +136,7 @@ export default function TimeLine () {
                             icon={<SupportAgentIcon />}
                         >
                             <Typography variant="h6" sx={{ fontWeight: 'bold' }} color={grey[700]}>Atención al cliente</Typography>
-                            <Divider sx={{ borderBottomWidth: 2 }}/>
+                            <Divider sx={{ borderBottomWidth: 2 }} />
                             <Typography variant="subtitle1" color="grey">Roka comunicación visual</Typography>
                             <Typography variant="body1" color="grey">
                                 Manejo de correspondencia y atención al cliente.
@@ -144,7 +149,7 @@ export default function TimeLine () {
                         />
                     </>
                 }
-            </VerticalTimeline>
+            </StyledVerticalTimeline>
         </Box>
     );
 }

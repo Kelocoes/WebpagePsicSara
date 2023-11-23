@@ -116,7 +116,7 @@ export default function Services () {
                                             component="button"
                                             variant="body1"
                                             color="inherit"
-                                            sx={{ fontSize: 15, '&:hover': { fontSize: 16 } }}
+                                            sx={{ fontSize: 15, transition: 'transform 0.2s ease', '&:hover': { transform: 'scale(1.1)' } }}
                                             onClick={handleClickOpen}
                                         >
                                             Saber más...
@@ -153,7 +153,7 @@ export default function Services () {
                                             component="button"
                                             variant="body1"
                                             color="inherit"
-                                            sx={{ fontSize: 15, '&:hover': { fontSize: 16 } }}
+                                            sx={{ fontSize: 15, transition: 'transform 0.2s ease', '&:hover': { transform: 'scale(1.1)' } }}
                                             onClick={handleClickOpen3}
                                         >
                                             Saber más...
@@ -191,7 +191,7 @@ export default function Services () {
                                             component="button"
                                             variant="body1"
                                             color="inherit"
-                                            sx={{ fontSize: 15, '&:hover': { fontSize: 16 } }}
+                                            sx={{ fontSize: 15, transition: 'transform 0.2s ease', '&:hover': { transform: 'scale(1.1)' } }}
                                             onClick={handleClickOpen2}
                                         >
                                             Saber más...
@@ -232,7 +232,7 @@ export default function Services () {
                                             component="button"
                                             variant="body1"
                                             color="inherit"
-                                            sx={{ fontSize: 15, '&:hover': { fontSize: 16 } }}
+                                            sx={{ fontSize: 15, transition: 'transform 0.2s ease', '&:hover': { transform: 'scale(1.1)' } }}
                                             onClick={handleClickOpen1}
                                         >
                                             Saber más...

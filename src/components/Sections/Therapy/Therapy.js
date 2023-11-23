@@ -14,6 +14,8 @@ import Divider from '@mui/material/Divider';
 import Dialog from '@mui/material/Dialog';
 
 import TherapyImg1 from '../../../assets/images/therapy_1.jpeg';
+import TherapyImg2 from '../../../assets/images/therapy_2.jpg';
+import TherapyImg3 from '../../../assets/images/therapy_3.png';
 
 import TherapyDialog2 from './TherapyDialog2';
 import TherapyDialog3 from './TherapyDialog3';
@@ -115,8 +117,8 @@ export default function Therapy () {
                                         <CardMedia
                                             sx={{ maxWidth: '70%', height: 'auto' }}
                                             component="img"
-                                            image={TherapyImg1}
-                                            alt="Therapy option 1"
+                                            image={TherapyImg2}
+                                            alt="Therapy option 2"
                                         />
                                         <CardContent>
                                             <Typography variant="h6" fontWeight="bold" color="#7b38c2b3">Paquete mensual</Typography>
@@ -155,8 +157,8 @@ export default function Therapy () {
                                         <CardMedia
                                             sx={{ maxWidth: '70%', height: 'auto' }}
                                             component="img"
-                                            image={TherapyImg1}
-                                            alt="Therapy option 1"
+                                            image={TherapyImg3}
+                                            alt="Therapy option 3"
                                         />
                                         <CardContent>
                                             <Typography variant="h6" fontWeight="bold" color="#7b38c2b3">Paquete trimestral</Typography>

@@ -11,11 +11,11 @@ export default function Contact () {
     const [ref, inView] = useInView({ triggerOnce: true });
 
     return (
-        <Box ref={ref} align="center" sx={{ zIndex: 1 }}>
+        <Box ref={ref} align="center" sx={{ zIndex: 1, width: '100%' }}>
             <Grow in={inView} mountOnEnter unmountOnExit timeout={1000}>
                 <Paper
                     sx={{
-                        width: '100%',
+                        width: { xs: '80%', md: '40%' },
                         height: '500px',
                         backgroundColor: '#white',
                         padding: 1,

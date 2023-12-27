@@ -17,7 +17,6 @@ import Dialog from '@mui/material/Dialog';
 import ServiceDialog1 from './ServiceDialog1';
 import ServiceDialog2 from './ServiceDialog2';
 import ServiceDialog3 from './ServiceDialog3';
-import ServiceDialog4 from './ServiceDialog4';
 
 export default function Services () {
     const [order, setOrder] = useState([]);
@@ -26,7 +25,6 @@ export default function Services () {
     const [open, setOpen] = useState(false);
     const [open1, setOpen1] = useState(false);
     const [open2, setOpen2] = useState(false);
-    const [open3, setOpen3] = useState(false);
 
     const handleClickOpen = () => {
         setOpen(true);
@@ -40,15 +38,10 @@ export default function Services () {
         setOpen2(true);
     };
 
-    const handleClickOpen3 = () => {
-        setOpen3(true);
-    };
-
     const handleClose = () => {
         setOpen(false);
         setOpen1(false);
         setOpen2(false);
-        setOpen3(false);
     };
 
     useEffect(() => {
@@ -99,7 +92,7 @@ export default function Services () {
                                     }}
                                 >
                                     <Typography sx={{ fontSize: 30, textShadow: '2px 2px 2px rgba(0, 0, 0, 0.2)' }}>
-                                        Psicoterapia <br /> individual
+                                        Psicoterapia <br /> Individual
                                     </Typography>
                                     <PsychologyAltIcon sx={{ fontSize: 75 }} />
                                     <Typography sx={{ fontSize: 18, textAlign: 'justify', paddingX: 2, paddingTop: 1 }}>
@@ -140,7 +133,7 @@ export default function Services () {
                                     }}
                                 >
                                     <Typography sx={{ fontSize: 30, textShadow: '2px 2px 2px rgba(0, 0, 0, 0.2)' }}>
-                                        Capacitación <br /> empresarial
+                                        Capacitación <br /> Empresarial
                                     </Typography>
                                     <ApartmentIcon sx={{ fontSize: 75 }} />
                                     <Typography sx={{ fontSize: 18, textAlign: 'justify', paddingX: 2, paddingTop: 1 }}>
@@ -154,7 +147,7 @@ export default function Services () {
                                             variant="body1"
                                             color="inherit"
                                             sx={{ fontSize: 15, transition: 'transform 0.2s ease', '&:hover': { transform: 'scale(1.1)' } }}
-                                            onClick={handleClickOpen3}
+                                            onClick={handleClickOpen1}
                                         >
                                             Saber más...
                                         </Link>
@@ -177,7 +170,7 @@ export default function Services () {
                                     }}
                                 >
                                     <Typography sx={{ fontSize: 30, textShadow: '2px 2px 2px rgba(0, 0, 0, 0.2)' }}>
-                                        Escuela <br /> para padres
+                                        Escuela <br /> para Padres
                                     </Typography>
                                     <Diversity1Icon sx={{ fontSize: 75 }} />
                                     <Typography sx={{ fontSize: 18, textAlign: 'justify', paddingX: 2, paddingTop: 1 }}>
@@ -215,7 +208,7 @@ export default function Services () {
                                     }}
                                 >
                                     <Typography sx={{ fontSize: 30, textShadow: '2px 2px 2px rgba(0, 0, 0, 0.2)' }}>
-                                        Orientación <br /> vocacional
+                                        Orientación <br /> Vocacional
                                     </Typography>
                                     <AutoStoriesIcon sx={{ fontSize: 75 }} />
                                     <Typography sx={{ fontSize: 18, textAlign: 'justify', paddingX: 2, paddingTop: 1 }}>
@@ -227,17 +220,6 @@ export default function Services () {
                                         Te apoyaré en la toma de decisiones para que puedas avanzar en el camino que te motive y llene de satisfacción
                                         mediante la exploración de tus metas, sueños y valores.
                                     </Typography>
-                                    <Box align="right">
-                                        <Link
-                                            component="button"
-                                            variant="body1"
-                                            color="inherit"
-                                            sx={{ fontSize: 15, transition: 'transform 0.2s ease', '&:hover': { transform: 'scale(1.1)' } }}
-                                            onClick={handleClickOpen1}
-                                        >
-                                            Saber más...
-                                        </Link>
-                                    </Box>
                                 </Box>
                             </Grow>
                         </Grid>
@@ -264,13 +246,6 @@ export default function Services () {
                 PaperProps={{ sx: { borderRadius: 5 } }}
             >
                 <ServiceDialog3 handleClose={handleClose} />
-            </Dialog>
-            <Dialog
-                open={open3}
-                onClose={handleClose}
-                PaperProps={{ sx: { borderRadius: 5 } }}
-            >
-                <ServiceDialog4 handleClose={handleClose} />
             </Dialog>
         </Box>
     );

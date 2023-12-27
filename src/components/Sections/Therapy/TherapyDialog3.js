@@ -29,7 +29,7 @@ export default function TherapyDialog3 (props) {
                     en paquete trimestral, adaptadas a tus necesidades, son las que más muestran resultados, debido a el proceso continuo
                     que se lleva.
                     <br /><br />
-                    Incluye un total de 10 sesiones, distribuidas durante 3 meses con una duración de 45 -50 minutos y cuanta con un
+                    Incluye un total de 10 sesiones, distribuidas durante 3 meses con una duración de 45 -50 minutos y cuenta con un
                     descuento del 10%, puedes elegir la modalidad que se ajuste a tu comodidad:
                     <br /><br />
                     •   Sesiones presenciales.

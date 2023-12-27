@@ -32,7 +32,7 @@ export default function TherapyDialog1 (props) {
                     y obtendremos una visión general de tu situación. Con esta base, desarrollaremos un plan de tratamiento personalizado.
                     <br/><br />
                     Las sesiones de seguimiento son esenciales para continuar el proceso terapéutico diseñado para mejorar la situación que
-                    estás atravesando. Con una duración de 40-45 minutos.
+                    estás atravesando. Con una duración de 45-50 minutos.
                     Elige la modalidad que se ajuste a tu comodidad:
                     <br/><br />
                     &emsp;•   Sesiones presenciales.

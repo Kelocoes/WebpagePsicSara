@@ -13,6 +13,7 @@ import Contact from '../Sections/Contact/Contact';
 import TimeLine from '../Sections/AboutMe/TimeLine';
 import Therapy from '../Sections/Therapy/Therapy';
 import MainPost from '../Sections/MainPost/MainPost';
+import Map from '../Sections/Map/Map';
 
 import configParticlesDesktop from './configParticlesDesktop.json';
 import configParticlesMobile from './configParticlesMobile.json';
@@ -52,6 +53,7 @@ export default function Landing () {
                 <Therapy />
                 <Element name="Contact" />
                 <Contact />
+                <Map />
                 <Footer />
             </Box>
             <Particles

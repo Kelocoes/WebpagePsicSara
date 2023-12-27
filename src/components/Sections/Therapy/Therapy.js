@@ -70,8 +70,8 @@ export default function Therapy () {
                 <Grid container >
                     <Grid item xs={12} md={1} />
                     <Grid item xs={12} md={10}>
-                        <Grid container spacing={5}>
-                            <Grid item xs={12} sm={4} sx={{ transition: 'transform 0.2s ease', '&:hover': { transform: 'scale(1.025)' } }}>
+                        <Grid container spacing={4}>
+                            <Grid item sm={12} md={4} sx={{ transition: 'transform 0.2s ease', '&:hover': { transform: 'scale(1.025)' } }}>
                                 <Grow in={order.length >= 1} timeout={1000}>
                                     <Card sx={{ borderRadius: 5 }} elevation={10}>
                                         <CardMedia
@@ -81,7 +81,7 @@ export default function Therapy () {
                                             alt="Therapy option 1"
                                         />
                                         <CardContent>
-                                            <Typography variant="h6" fontWeight="bold" color="#7b38c2b3">Sesión personalizada</Typography>
+                                            <Typography variant="h6" fontWeight="bold" color="#7b38c2b3">Sesión Personalizada</Typography>
                                             <Divider sx={{ marginBottom: 1, width: '50%' }} />
                                             <Typography variant="body1"
                                                 sx={{ fontSize: 20, textAlign: 'center', paddingX: 2 }}
@@ -111,7 +111,7 @@ export default function Therapy () {
                                     </Card>
                                 </Grow>
                             </Grid>
-                            <Grid item xs={12} sm={4} sx={{ transition: 'transform 0.2s ease', '&:hover': { transform: 'scale(1.025)' } }}>
+                            <Grid item sm={12} md={4} sx={{ transition: 'transform 0.2s ease', '&:hover': { transform: 'scale(1.025)' } }}>
                                 <Grow in={order.length >= 2} timeout={1000}>
                                     <Card sx={{ borderRadius: 5 }} elevation={10}>
                                         <CardMedia
@@ -121,7 +121,7 @@ export default function Therapy () {
                                             alt="Therapy option 2"
                                         />
                                         <CardContent>
-                                            <Typography variant="h6" fontWeight="bold" color="#7b38c2b3">Paquete mensual</Typography>
+                                            <Typography variant="h6" fontWeight="bold" color="#7b38c2b3">Paquete Mensual</Typography>
                                             <Divider sx={{ marginBottom: 1, width: '50%' }} />
                                             <Typography variant="body1"
                                                 sx={{ fontSize: 20, textAlign: 'center', paddingX: 2 }}
@@ -151,7 +151,7 @@ export default function Therapy () {
                                     </Card>
                                 </Grow>
                             </Grid>
-                            <Grid item xs={12} sm={4} sx={{ transition: 'transform 0.2s ease', '&:hover': { transform: 'scale(1.025)' } }}>
+                            <Grid item sm={12} md={4} sx={{ transition: 'transform 0.2s ease', '&:hover': { transform: 'scale(1.025)' } }}>
                                 <Grow in={order.length >= 3} timeout={1000}>
                                     <Card sx={{ borderRadius: 5 }} elevation={10}>
                                         <CardMedia
@@ -161,7 +161,7 @@ export default function Therapy () {
                                             alt="Therapy option 3"
                                         />
                                         <CardContent>
-                                            <Typography variant="h6" fontWeight="bold" color="#7b38c2b3">Paquete trimestral</Typography>
+                                            <Typography variant="h6" fontWeight="bold" color="#7b38c2b3">Paquete Trimestral</Typography>
                                             <Divider sx={{ marginBottom: 1, width: '50%' }} />
                                             <Typography variant="body1"
                                                 sx={{ fontSize: 20, textAlign: 'center', paddingX: 2 }}

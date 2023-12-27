@@ -26,7 +26,7 @@ export default function ServiceDialog3 (props) {
             <DialogContent>
                 <DialogContentText variant="body2" color={grey[700]} sx={{ textAlign: { sm: 'justify', xs: 'left' } }}>
                     Entendemos que la crianza viene con sus desafíos y aprender cómo hacerlo correctamente puede ser complicado,
-                    es por eso que en contamos con:
+                    es por eso que contamos con:
                     <br /><br />
                     &emsp;•   Talleres y sesiones llenos de consejos prácticos que harán que la crianza sea menos complicada y
                     fortalecerán los lazos familiares.

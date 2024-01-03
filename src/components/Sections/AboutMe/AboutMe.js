@@ -9,7 +9,7 @@ import Box from '@mui/material/Box';
 import CardMedia from '@mui/material/CardMedia';
 import { useInView } from 'react-intersection-observer';
 
-import AboutMePhoto from '../../../assets/images/aboutMe.jpg';
+import AboutMePhoto from '../../../assets/images/aboutMe.png';
 
 export default function AboutMe () {
     const [order, setOrder] = useState([]);

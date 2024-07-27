@@ -13,6 +13,8 @@ import emailjs from '@emailjs/browser';
 
 import { useEnv } from '../../EnvContext';
 
+import DoctoraliaWidget from './Doctoralia';
+
 export default function Contact () {
     const { handleSubmit: getInfo, register: registro, reset } = useForm();
     const [ref, inView] = useInView({ triggerOnce: true });
@@ -34,86 +36,97 @@ export default function Contact () {
     return (
         <Box ref={ref} align="center" sx={{ zIndex: 1 }}>
             <Grow in={inView} mountOnEnter unmountOnExit timeout={1000}>
-                <Paper
+                <Box
                     sx={{
-                        width: { xs: '70%', md: '40%' },
-                        backgroundColor: '#white',
-                        padding: 1,
-                        color: 'white',
-                        borderRadius: 5,
-                        marginBottom: 5
+                        display: 'flex',
+                        flexDirection: { xs: 'column', md: 'column', lg: 'row' },
+                        justifyContent: 'center',
+                        alignItems: 'center'
                     }}
-                    elevation={10}
                 >
-                    <Grid container spacing={2}>
-                        <Grid item xs={12}>
-                            <Box>
-                                <Typography variant="h4" fontWeight="bold" align="center" color="grey">Contacto</Typography>
-                                <Divider variant="middle" sx={{ marginX: 10 }} />
-                            </Box>
+                    <Paper
+                        sx={{
+                            width: { xs: '70%', md: '50%', lg: '30%' },
+                            backgroundColor: '#white',
+                            padding: 1,
+                            color: 'white',
+                            borderRadius: 5,
+                            marginBottom: 2,
+                            mx: 2
+                        }}
+                        elevation={10}
+                    >
+                        <Grid container spacing={2}>
+                            <Grid item xs={12}>
+                                <Box>
+                                    <Typography variant="h4" fontWeight="bold" align="center" color="grey">Contacto</Typography>
+                                    <Divider variant="middle" sx={{ marginX: 10 }} />
+                                </Box>
+                            </Grid>
+                            <Grid item xs={12}>
+                                <Box sx={{ paddingX: { xs: 2, md: 10 }, marginBottom: 2 }}>
+                                    <form ref={form} onSubmit={getInfo(onSubmit)}>
+                                        <Grid container spacing={2}>
+                                            <Grid item xs={12}>
+                                                <TextField
+                                                    size="small"
+                                                    fullWidth
+                                                    label="Nombre"
+                                                    {...registro('name', { required: true })}
+                                                />
+                                            </Grid>
+                                            <Grid item xs={12}>
+                                                <TextField
+                                                    size="small"
+                                                    fullWidth
+                                                    label="Email"
+                                                    {...registro('email', { required: true })}
+                                                />
+                                            </Grid>
+                                            <Grid item xs={12}>
+                                                <TextField
+                                                    size="small"
+                                                    fullWidth
+                                                    label="Teléfono"
+                                                    {...registro('cellphone', { required: true })}
+                                                />
+                                            </Grid>
+                                            <Grid item xs={12}>
+                                                <TextField
+                                                    size="small"
+                                                    fullWidth
+                                                    label="Asunto"
+                                                    {...registro('subject', { required: true })}
+                                                />
+                                            </Grid>
+                                            <Grid item xs={12}>
+                                                <TextField
+                                                    size="small"
+                                                    fullWidth
+                                                    multiline={true}
+                                                    rows={3}
+                                                    label="Mensaje"
+                                                    {...registro('message', { required: true })}
+                                                />
+                                            </Grid>
+                                            <Grid item xs={12}>
+                                                <Button
+                                                    disabled={!isActive}
+                                                    variant="contained"
+                                                    onClick={getInfo(onSubmit)}
+                                                    sx={{ textTransform: 'none' }}
+                                                >
+                                                    Enviar
+                                                </Button>
+                                            </Grid>
+                                        </Grid>
+                                    </form>
+                                </Box>
+                            </Grid>
                         </Grid>
-                        <Grid item xs={12}>
-                            <Box sx={{ paddingX: { xs: 2, md: 10 }, marginBottom: 2 }}>
-                                <form ref={form} onSubmit={getInfo(onSubmit)}>
-                                    <Grid container spacing={2}>
-                                        <Grid item xs={12}>
-                                            <TextField
-                                                size="small"
-                                                fullWidth
-                                                label="Nombre"
-                                                {...registro('name', { required: true })}
-                                            />
-                                        </Grid>
-                                        <Grid item xs={12}>
-                                            <TextField
-                                                size="small"
-                                                fullWidth
-                                                label="Email"
-                                                {...registro('email', { required: true })}
-                                            />
-                                        </Grid>
-                                        <Grid item xs={12}>
-                                            <TextField
-                                                size="small"
-                                                fullWidth
-                                                label="Teléfono"
-                                                {...registro('cellphone', { required: true })}
-                                            />
-                                        </Grid>
-                                        <Grid item xs={12}>
-                                            <TextField
-                                                size="small"
-                                                fullWidth
-                                                label="Asunto"
-                                                {...registro('subject', { required: true })}
-                                            />
-                                        </Grid>
-                                        <Grid item xs={12}>
-                                            <TextField
-                                                size="small"
-                                                fullWidth
-                                                multiline={true}
-                                                rows={3}
-                                                label="Mensaje"
-                                                {...registro('message', { required: true })}
-                                            />
-                                        </Grid>
-                                        <Grid item xs={12}>
-                                            <Button
-                                                disabled={!isActive}
-                                                variant="contained"
-                                                onClick={getInfo(onSubmit)}
-                                                sx={{ textTransform: 'none' }}
-                                            >
-                                                Enviar
-                                            </Button>
-                                        </Grid>
-                                    </Grid>
-                                </form>
-                            </Box>
-                        </Grid>
-                    </Grid>
-                </Paper>
+                    </Paper>
+                    <DoctoraliaWidget />
+                </Box>
             </Grow>
         </Box>
     );
